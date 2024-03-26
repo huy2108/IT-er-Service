@@ -90,5 +90,42 @@
     bottom: -10px;
     /* border: 1px solid red; */
 }
+.icon{
+    cursor: pointer;
+}
+.show {
+    display: block;
+}
+.remove {
+    display: none;
+}
+.dots{
+    position: absolute;
+    width:40px;
+    height:20px;
+    /* border: 1px solid black; */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dots span {
+    /* position: absolute; */
+    width:8px;
+    height:8px;
+    background-color: black;
+    border-radius: 50px 50px;
+    box-shadow: 1px 1px 5px #888888;
+    opacity: 0.6;
+}
+
+.dots .activeDot{
+    /* border: 5px solid green; */
+    opacity: 1;
+    margin-bottom: 10px;
+}
 
 
