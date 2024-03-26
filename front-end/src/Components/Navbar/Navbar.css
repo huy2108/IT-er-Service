@@ -1,0 +1,159 @@
+
+
+.navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #888888;
+    /* border: 1px solid black; */
+    display: flex;   
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.navbar.shrink {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    height: 80px;
+}
+.nav-logo{
+    height:100%;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    cursor: pointer;
+
+}
+.nav-logo img {
+    width: 90x;
+    height: 80%;   
+    margin-right: 13px;
+}
+.nav-logo p {
+    font-size: 28px;
+    font-weight: 600;
+    color: #171717;
+}
+.nav-menu{
+    position:absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    height:100%;
+    align-items: center;
+    width: 40%;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 450;
+    left:50%;
+    transform: translateX(-50%);
+}
+.nav-menu li {
+    cursor: pointer;
+    line-height: 51px;
+    width: 70px;
+    text-align:center;
+    position: relative;
+    text-decoration: none;
+}
+
+
+.link-style {
+    text-decoration: none;
+    color: #171717;
+}
+
+.nav-menu li .books-section {
+    position: absolute;
+    min-width: 150px;
+    height: 100px;
+    top: bottom;
+    margin-top: 0px;
+    background-color: white;
+    border-radius: 10px 10px;
+    box-shadow: 0.5px 0.5px 5px #888888;
+    display: none;
+}
+
+.nav-menu li:hover .books-section {
+    display: block;
+    
+}
+
+.nav-menu li .books-section li{
+    position: relative;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+    height:50%;
+    width: 100%;
+}
+
+.nav-menu li .books-section li p{
+    position: absolute;
+    /* top:50%; */
+    left: 5px;
+    /* border:1px solid red; */
+    height: 100%;
+    width:80%;
+    text-align: start;
+}
+
+
+.nav-menu li .books-section ul{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu li .books-section:hover li:hover {
+    background-color: #cdcdcd;
+}
+
+.nav-menu li:hover .books-section {
+    display: block;
+    font-size: 12px;
+}
+
+.nav-menu li:hover {
+    background-color: #cdcdcd;
+    border-radius: 10px 10px;
+
+}
+
+.login button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    height:40px;
+    width: 120px;
+    background-color: #fbcd37;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    box-shadow: 1px 1px 5px #888888;
+}
+.login button:hover{
+    background-color: #e1ac00;
+    color:white
+}
+.nav-menu hr {
+    width:60%;
+    height: 3px;
+    background-color:#198be1;
+    border-radius: 10px;
+    border:none;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+hr.shrink{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
