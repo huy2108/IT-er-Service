@@ -16,7 +16,7 @@
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: 50%;
     width: 90%;
 }
@@ -113,4 +113,44 @@
 .footer .media-icons a img {
     height: 62%;
     width: 62%;
+}
+.footer .footer-nav {
+    position: absolute;
+    border: 1px solid red;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 40%;
+}
+.footer .footer-product{
+    position: absolute;
+    border: 1px solid red;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 60%;
+}
+.footer .footer-contact{
+    position: absolute;
+    border: 1px solid red;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 80%;
+}
+.footer-nav h2, .footer-product h2, .footer-contact h2 {
+    color: white;
+    border: 1px solid green;
+    font-weight: 600;
+    font-size: 18px;
+
+    /* text-align: center; */
+}
+.footer-nav .useful-link li {
+    cursor: pointer;
+    color: white;
+    margin-top: 5px;
+    list-style-type: none;
+    font-weight: 300;
+    /* text-decoration: underline; */
 }

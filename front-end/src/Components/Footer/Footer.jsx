@@ -25,6 +25,21 @@ export const Footer = () => {
                   Technological Landscape.
                 </p>
               </div>
+              <div className="footer-nav">
+                <h2>Useful Link</h2>
+                <ul className="useful-link">
+                  <li>Home</li>
+                  <li>Library</li>
+                  <li>Books for sale</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <div className="footer-product">
+                <h2></h2>
+              </div>
+              <div className="footer-contact">
+                <h2>Contact</h2>
+              </div>
             </div>
             <div className="line"></div>
             <p>&copy; 2024 IT-er Service. All rights reserved.</p>
