@@ -22,7 +22,7 @@ export const Home = () => {
             <p onClick={scrollToAboutUs}>About Us</p>
             <p onClick={scrollToWhoWeAre}>Who we are</p>
             <p>Our goal</p>
-        </div>
+      </div>
       <AboutUs/>
       <WhoWeAre/>
     </div>
