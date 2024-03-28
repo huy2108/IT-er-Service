@@ -14,7 +14,7 @@ export const Navbar = () => {
             const hr = document.getElementsByTagName('hr')[0]
             const navbar = document.getElementById('navbar')
             
-            if(window.scrollY > 0) {
+            if(window.scrollY > 40) {
                 navbar.classList.add('shrink')
                 hr.classList.add('shrink')
             }else {
