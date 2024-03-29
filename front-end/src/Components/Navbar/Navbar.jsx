@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react';
+import React, { useEffect, useContext } from 'react'
 import './Navbar.css';
 import logo from '../Assets/logo.png'
 import {Link} from 'react-router-dom'
+import { StoreContext } from "../../Context/setNavElementsContext"
+import {actions} from '../../Context/setNavElementsContext'
 
 
 
 export const Navbar = () => {
-    const [menu,setMenu] = useState('HOME')
+    const [state, dispatch] = useContext(StoreContext)
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -25,7 +26,7 @@ export const Navbar = () => {
     },[])
 
     const handleClick = (value) => {
-        setMenu(value)
+        dispatch(actions.setElement(value))
 
         window.scrollTo({
             top: 0,
@@ -42,8 +43,8 @@ export const Navbar = () => {
                 </div>
             </Link>
             <ul className="nav-menu">
-                <li onClick={() => handleClick('HOME')}><Link className="link-style" to='/'><p>HOME</p></Link> {menu === 'HOME' ? <hr/> : <></>}</li>
-                <li onClick={() => handleClick('BOOKS')}><Link className="link-style" to='/books/library'><p>BOOKS</p></Link> {menu === 'BOOKS' ? <hr/> : <></>}
+                <li className='nav-elements' onClick={() => handleClick('HOME')}><Link className="link-style" to='/'><p>HOME</p></Link> {state === 'HOME' ? <hr/> : <></>}</li>
+                <li className='nav-elements' onClick={() => handleClick('BOOKS')}><Link className="link-style" to='/books/library'><p>BOOKS</p></Link> {state === 'BOOKS' ? <hr/> : <></>}
                     <div className='books-section'>
                         <ul>
                             <li><Link className="link-style" to='/books/library'><p>LIBRARY</p></Link></li>
@@ -51,7 +52,7 @@ export const Navbar = () => {
                         </ul>
                     </div>
                 </li>
-                <li onClick={() => handleClick('BLOG')}><Link className="link-style" to='/blog'><p>BLOG</p></Link> {menu === 'BLOG' ? <hr/> : <></>}</li>
+                <li  className='nav-elements'onClick={() => handleClick('BLOG')}><Link className="link-style" to='/blog'><p>BLOG</p></Link> {state === 'BLOG' ? <hr/> : <></>}</li>
             </ul>
             <div className="login">
                 <button><Link className="link-style" to='/login'><p>LOG IN</p></Link></button>

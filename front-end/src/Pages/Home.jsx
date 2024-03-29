@@ -21,7 +21,6 @@ export const Home = () => {
       <div className="ribbon">
             <p onClick={scrollToAboutUs}>About Us</p>
             <p onClick={scrollToWhoWeAre}>Who we are</p>
-            <p>Our goal</p>
       </div>
       <AboutUs/>
       <WhoWeAre/>

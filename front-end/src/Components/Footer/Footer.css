@@ -154,3 +154,7 @@
     font-weight: 300;
     /* text-decoration: underline; */
 }
+.link-style-footer{
+    color:white;
+    text-decoration: none;
+}
