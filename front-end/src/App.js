@@ -13,16 +13,35 @@ import { BooksForSale} from './Pages/BooksForSale'
 function App() {
   return (
     <div >
-        <Navbar/>
+        {/* <Navbar/> */}
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-          <Route path='/books/for-sales' element={<BooksForSale/>}/>
-          <Route path='/books/library' element={<Library/>}/>
-          <Route path='/login' element={<LoginSignup/>}/>
+          <Route
+            path="*"
+            element={
+              <DefaultLayout>
+                <Route path="/" element={<Home />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/books/for-sales" element={<BooksForSale />} />
+                <Route path="/books/library" element={<Library />} />
+              </DefaultLayout>
+            }
+          />
+          <Route path="/login" element={<LoginSignup />} />
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
+  );
+}
+
+function DefaultLayout({children}) {
+  return (
+    <>
+      <Navbar />
+        <Routes>
+          {children}
+        </Routes>
+      <Footer />
+    </>
   );
 }
 

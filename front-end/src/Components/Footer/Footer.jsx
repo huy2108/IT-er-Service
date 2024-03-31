@@ -17,6 +17,12 @@ export const Footer = () => {
 
 
   const updateNavElements = value => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+
     dispatch(actions.setElement(value))
   }
 

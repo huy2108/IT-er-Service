@@ -17,8 +17,6 @@ export const AboutUs = () => {
     }
   }
 
-  console.log(state)
-
   return (
     <div className='container' id='about-us'>
         <div className="aboutUs">
