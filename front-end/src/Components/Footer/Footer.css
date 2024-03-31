@@ -3,9 +3,6 @@
     position:relative;
     /* background-color: rgb(194, 194, 194); */
     background-color: rgb(22, 22, 22);
-    /* background: linear-gradient(to right, #012140dd, rgba(241, 241, 109, 0.638)); */
-    /* opacity: 0.9; */
-    /* border-radius: 160px 0 0 0; */
     height: 75vh;
     width: 100%;
     top:0;
@@ -16,7 +13,7 @@
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 50%;
     width: 90%;
 }
@@ -116,15 +113,15 @@
 }
 .footer .footer-nav {
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
     width: 15%;
     top: 0;
-    left: 40%;
+    left: 45%;
 }
 .footer .footer-product{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
     width: 15%;
     top: 0;
@@ -132,18 +129,18 @@
 }
 .footer .footer-contact{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
-    width: 15%;
+    width: 17%;
     top: 0;
-    left: 80%;
+    left: 70%;
 }
-.footer-nav h2, .footer-product h2, .footer-contact h2 {
+.footer-nav h2, .footer-contact h2 {
     color: white;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-weight: 600;
     font-size: 18px;
-
+    margin: 20px 10px 0px 0px;
     /* text-align: center; */
 }
 .footer-nav .useful-link li {
@@ -153,6 +150,29 @@
     list-style-type: none;
     font-weight: 300;
     /* text-decoration: underline; */
+}
+.footer-contact .contact-us li {
+    position: relative;
+    /* border: 2px solid red; */
+    height: 48px;
+    list-style-type: none;
+}
+.footer-contact .contact-us li:first-child{
+    margin-top: 10px;
+}
+.footer-contact .contact-us li img{
+    position: absolute;
+    width:30px;
+    height:30px;
+}
+.footer-contact .contact-us li p {
+    position: absolute;
+    /* border: 1px solid green; */
+    font-size: 12px;
+    top:-10px;
+    margin-left:15px;
+    height: 100%;
+    width:80%;
 }
 .link-style-footer{
     color:white;

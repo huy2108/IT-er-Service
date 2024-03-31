@@ -7,7 +7,9 @@ import logo from '../Assets/logo.png'
 import {Link} from 'react-router-dom'
 import { StoreContext } from "../../Context/setNavElementsContext"
 import {actions} from '../../Context/setNavElementsContext'
-
+import location from '../Assets/location.png'
+import gmail from '../Assets/gmail.png'
+import phone from '../Assets/phone.png'
 
 export const Footer = () => {
 
@@ -46,11 +48,25 @@ export const Footer = () => {
                   <li onClick={() => updateNavElements('BLOG')}><Link className="link-style-footer" to='/blog'>Blog</Link></li>
                 </ul>
               </div>
-              <div className="footer-product">
+              {/* <div className="footer-product">
                 <h2></h2>
-              </div>
+              </div> */}
               <div className="footer-contact">
                 <h2>Contact</h2>
+                <ul className="contact-us">
+                  <li className='location'>
+                    <img src={location}  alt="" />
+                    <p>123 Main Street, London, W1A 1AA, United Kingdom</p>
+                  </li>
+                  <li>
+                    <img src={gmail} alt="" />
+                    <p>lequanghuy2108@gmail.com</p>
+                  </li>
+                  <li>
+                    <img src={phone} alt="" />
+                    <p>+44 20 1234 5678</p>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="line"></div>
