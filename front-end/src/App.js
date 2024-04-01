@@ -5,7 +5,7 @@ import { Routes, Route} from 'react-router-dom';
 import { Home} from './Pages/Home'
 import { Blog} from './Pages/Blog'
 import { Library} from './Pages/Library'
-import { LoginSignup} from './Pages/LoginSignup'
+import { LoginSignup} from './Pages/LoginSignup/LoginSignup'
 import { BooksForSale} from './Pages/BooksForSale'
 
 
