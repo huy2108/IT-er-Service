@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .login-container img {
     width: 100%;
@@ -50,6 +51,7 @@
     /* transform: translateX(-50%); */
 }
 .login-container .form .login-details .username{
+    position: relative;
     height: 100px;
     width: 100%;
     /* border: 1px solid black; */
@@ -62,11 +64,24 @@
     border-radius: 15px 15px;
     border: 1px solid #c7c7c7;
     text-indent: 60px;
-    background-image: url('/src/Components/Assets/usernameLogo.png');
+    /* background-image: url('/src/Components/Assets/usernameLogo.png'); */
+    /* background-repeat: no-repeat;   
+    background-size: 20px;
+    background-position: 20px center; */
+    outline: none;
+    /* display: block; */
+}
+.login-container .form .login-details .username .lock{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-23%);
+    background-image: url('/src/Components/Assets/usernameLogo.png'); 
     background-repeat: no-repeat;   
     background-size: 20px;
     background-position: 20px center;
-    outline: none;
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid red; */
 }
 .login-container .form .login-details .username input::placeholder{
     font-size: 14px;

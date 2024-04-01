@@ -3,11 +3,14 @@ import ebookImage from '../../Components/Assets/Login-image.jpg'
 import './login.css'
 import eyeBlue from '../../Components/Assets/eyeBlue.png'
 import eye from '../../Components/Assets/eye.png'
+import axios from 'axios'
+
 
 export const LoginSignup = () => {
 
+  const [username, setUsername] = useState('')
+  const [pwd, setPwd] = useState('')
   const [image, setImage] = useState('eye')
-
   const inputRef = useRef(null);
 
   const togglePasswordVisibility = () =>{
@@ -29,6 +32,11 @@ export const LoginSignup = () => {
 
   }
 
+  const handleSubmit = () => {
+    // axios.post('/api/login',{username, pwd})
+    //   .then
+  }
+
 
   return (
     <div className='login-container'>
@@ -42,14 +50,15 @@ export const LoginSignup = () => {
         <form className="login-details">
           <div className="username">
             <label htmlFor="username">Username</label>
-            <input type="text" placeholder='Enter your username' name="username" maxLength={20} id="username" required />
+            <input type="text" onChange={e => setUsername(e.target.value)} placeholder='Enter your username' name="username" maxLength={20} id="username" required />
+            <i className='lock'></i>
           </div>
           <div className="password">
             <label htmlFor="password">Password</label>
-            <input type="password" placeholder='Enter your password' maxLength={25} name="password" id="password" required />
+            <input type="password" onChange={e => setPwd(e.target.value)} placeholder='Enter your password' maxLength={25} name="password" id="password" required />
             <i ref={inputRef} className="eye-icon" onClick={togglePasswordVisibility}></i>
           </div>
-          <button type='submit'>Submit</button>
+          <button type='submit' onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </div>
