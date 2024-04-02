@@ -154,8 +154,12 @@
 .footer-contact .contact-us li {
     position: relative;
     /* border: 2px solid red; */
+    margin-top: -2px;
     height: 48px;
     list-style-type: none;
+}
+.footer-contact .contact-us li:last-child{
+    margin-top: -5px;
 }
 .footer-contact .contact-us li:first-child{
     margin-top: 10px;

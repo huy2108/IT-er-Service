@@ -18,7 +18,7 @@ export const Navbar = () => {
             if(window.scrollY > 40) {
                 navbar.classList.add('shrink')
                 hr.classList.add('shrink')
-            }else {
+            }else if(navbar !== null && hr !== null){
                 navbar.classList.remove('shrink')
                 hr.classList.remove('shrink')
             }
@@ -55,7 +55,7 @@ export const Navbar = () => {
                 <li  className='nav-elements'onClick={() => handleClick('BLOG')}><Link className="link-style" to='/blog'><p>BLOG</p></Link> {state === 'BLOG' ? <hr/> : <></>}</li>
             </ul>
             <div className="login">
-                <button><Link className="link-style" to='/login'><p>LOG IN</p></Link></button>
+                <Link className="link-style" to='/login'><button><p>LOG IN</p></button></Link>
             </div>
         </div>
   )

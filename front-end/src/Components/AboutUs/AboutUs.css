@@ -29,14 +29,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     
 }
 .ribbon p {
     margin: 0 50px;
-    /* border: 1px solid red; */
     line-height: 40px;
-    /* height: 100%; */
+    cursor: pointer;
 }
 .ribbon p:hover{
     background-color: black;
