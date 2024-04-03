@@ -7,6 +7,7 @@ import { Blog} from './Pages/Blog'
 import { Library} from './Pages/Library'
 import { LoginSignup} from './Pages/LoginSignup/LoginSignup'
 import { BooksForSale} from './Pages/BooksForSale'
+import { Register } from './Pages/Register/Register'
 
 
 
@@ -27,6 +28,7 @@ function App() {
             }
           />
           <Route path="/login" element={<LoginSignup />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         {/* <Footer/> */}
     </div>

@@ -1,17 +1,25 @@
 const path = require('path')
-const express = require('express');
 const multer = require('multer');
 const cors = require('cors');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const route = require('./routes');
+const methodOverride = require('method-override');
+const morgan = require('morgan');
+const express = require('express')
 
 // Initialize the Express application
-const app = express();
+const app = express()
 const PORT = 4000;
 
 // Database connection
 const db = require('./config/db/index')
 db.connect()
+
+// Allow https://localhost:3000 from front-end
+app.use(cors({
+    origin: 'http://localhost:3000'
+  }));
 
 // Encoded for POST, PUT, PATCH, DELETE methods
 app.use(express.urlencoded({
@@ -19,29 +27,13 @@ app.use(express.urlencoded({
 }));
 app.use(express.json())
 
-// Scrapping data
-async function fetchData(url) {
-    const response = await axios.get(url);
-    return response.data;
-}
+// Method override
+app.use(methodOverride('_method'))
+app.use(morgan('combined'));
 
-async function scrapeData() {
-    const html = await fetchData('https://tiki.vn/');
-    const $ = cheerio.load(html);
-
-    // Example: Scraping the titles of all links on the page
-    const titles = [];
-    $('a').each((index, element) => {
-        titles.push($(element).text());
-    });
-    console.log(titles)
-    return titles;
-}
+route(app)
 
 
-app.get('/', (req,res) => {
-    return res.json("Hello World")
-})
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);

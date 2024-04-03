@@ -1,5 +1,4 @@
 import React, {useRef, useState} from 'react'
-import ebookImage from '../../Components/Assets/Login-image.jpg'
 import './login.css'
 import eyeBlue from '../../Components/Assets/eyeBlue.png'
 import eye from '../../Components/Assets/eye.png'
@@ -9,7 +8,7 @@ import axios from 'axios'
 export const LoginSignup = () => {
 
   const [username, setUsername] = useState('')
-  const [pwd, setPwd] = useState('')
+  const [password, setPwd] = useState('')
   const [image, setImage] = useState('eye')
   const inputRef = useRef(null);
 
@@ -33,14 +32,18 @@ export const LoginSignup = () => {
   }
 
   const handleSubmit = () => {
-    // axios.post('/api/login',{username, pwd})
-    //   .then
+    axios.get('http://localhost:4000/api/login',{username, password})
+      .then(response => {
+        console.log(response.data)
+      })
+      .catch(error => {
+        console.error('Login falied!', error.data.response)
+      })
   }
-
 
   return (
     <div className='login-container'>
-      <img src={ebookImage} alt="" />
+      {/* <img src={ebookImage} alt="" /> */}
       <h1>IT-er Service</h1>
       <div className="form">
         <h1 className="form-title">
@@ -60,6 +63,12 @@ export const LoginSignup = () => {
           </div>
           <button type='submit' onClick={handleSubmit}>Submit</button>
         </form>
+        <div className="register-para">
+            <p>
+              Don't have an account?
+              <a href="/register"> Signup</a>
+            </p>
+          </div>
       </div>
     </div>
   )

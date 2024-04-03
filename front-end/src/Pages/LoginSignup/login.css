@@ -2,7 +2,11 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-image: url('/src/Components/Assets/Login-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
 }
 .login-container img {
     width: 100%;
@@ -48,7 +52,6 @@
     height: 65%;
     bottom: 5%;
     left: 11%;
-    /* transform: translateX(-50%); */
 }
 .login-container .form .login-details .username{
     position: relative;
@@ -148,9 +151,35 @@
     border: none;
     background-color: #4c8cccec;
     color: white;
-    margin-top: 20px;
     font-size: 20px;
+    margin-top: 20px;
 }
 .login-container .form .login-details button:hover{
     background-color: #125eaaec;
+}
+.login-container .register-para {
+    position: absolute;
+    /* background-color: red; */
+    font-size: 12px;
+    color: grey;
+    bottom:2px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 30px;
+}
+.login-container .register-para p {
+    position:absolute;
+    left:0;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.login-container .register-para p a{
+    text-decoration: none;
+    color: #0c7bebec;
+}
+.login-container .register-para p a:active{
+    color: #033a72ec;
 }
