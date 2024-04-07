@@ -7,7 +7,7 @@ import {actions} from '../../Context/setNavElementsContext'
 
 
 
-export const Navbar = () => {
+export const Navbar = ({setIsLoggedIn}) => {
     const [state, dispatch] = useContext(StoreContext)
 
     useEffect(() => {
@@ -34,6 +34,11 @@ export const Navbar = () => {
           });
     }
 
+    const handleLogout = () => {
+        localStorage.removeItem('token')
+        setIsLoggedIn(false)
+    }
+
   return (
         <div className='navbar' id='navbar'>
             <Link className="link-style" to='/'>
@@ -55,7 +60,7 @@ export const Navbar = () => {
                 <li  className='nav-elements'onClick={() => handleClick('BLOG')}><Link className="link-style" to='/blog'><p>BLOG</p></Link> {state === 'BLOG' ? <hr/> : <></>}</li>
             </ul>
             <div className="login">
-                <Link className="link-style" to='/login'><button><p>LOG IN</p></button></Link>
+                <button onClick={handleLogout}><p>LOG OUT</p></button>
             </div>
         </div>
   )

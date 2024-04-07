@@ -146,6 +146,10 @@
     background-color: #e1ac00;
     color:white;
 }
+.login button:active{
+    background-color: #af8705;
+    color:white;
+}
 .nav-menu hr {
     width:60%;
     height: 3px;

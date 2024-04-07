@@ -6,7 +6,12 @@ const cheerio = require('cheerio');
 const route = require('./routes');
 const methodOverride = require('method-override');
 const morgan = require('morgan');
-const express = require('express')
+const express = require('express');
+require('dotenv').config()
+
+const jwtSecret = process.env.JWT_SECRET
+module.exports = jwtSecret
+console.log(jwtSecret)
 
 // Initialize the Express application
 const app = express()

@@ -42,7 +42,9 @@ export const Register = () => {
 
         const handleSubmit = (e) => {
             e.preventDefault()
-            const username = document.getElementById('username')
+            const userName = document.getElementById('username')
+            console.log(username)
+            console.log(password)
             
             axios.post('http://localhost:4000/api/register', {firstname,lastname,username,password})
                 .then(response => {
@@ -53,8 +55,8 @@ export const Register = () => {
                     console.log(error)
                     alert("User already existed! Please choose another username.")
                     setUsername('')
-                    username.style.borderColor = 'red'
-                    username.focus()
+                    userName.style.borderColor = 'red'
+                    userName.focus()
                 })
                 
         }

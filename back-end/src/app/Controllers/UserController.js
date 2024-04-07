@@ -1,10 +1,19 @@
 const User = require("../Models/User");
+const jwt = require('jsonwebtoken')
+// const bcrypt = require('bcrypt');
+// setTimeout(() => {
+//     const jwtSecret = require('../../index')
+//     console.log(jwtSecret); // jwtSecret will be defined here
+//   }, 1000); // Adjust the delay time as needed (in milliseconds)
+  
 
 class UserController {
 
     // [POST] create user
     register(req,res){
         const {firstname, lastname, username, password} = req.body
+        res.json(username)
+
         
         User.findOne({username})
             .then(user => {
@@ -26,20 +35,36 @@ class UserController {
                 return res.status(status).json({ message });
             })
         
-
-        return
     }
 
+    // [POST] Login authetication
     login(req,res){
         const {username, password} = req.body
-
-        User.findOne({username, password})
+        User.findOne({username,password})
             .then(user => {
-                if(user){
-
+                
+                if(!user){
+                    return Promise.reject({status: 401, message: "Invalid username or password"})
                 }
+
+                    const jwtSecret = require('../../index')
+                    const token = jwt.sign({userId: user._id}, jwtSecret, {expiresIn:'5h'})
+                    return res.status(200).json({token})
+                
+            })
+            .catch(error => {
+                const status = error.status || 500
+                const message = error.message || "Internal server error"
+
+                return res.status(status).json({message})
             })
     }
+
+    // [GET] User verification
+    verify(req,res){
+        return res.status(200).json({message: 'Authenticated: User verified'})
+    }
+
 }
 
 module.exports = new UserController;
