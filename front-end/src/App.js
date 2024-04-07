@@ -50,9 +50,9 @@ function App() {
             element={
               <DefaultLayout setIsLoggedIn={setIsLoggedIn}>
                 <Route path="/" element={isLoggedIn ? <Home/> : <Navigate to="/login" />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/books/for-sales" element={<BooksForSale />} />
-                <Route path="/books/library" element={<Library />} />
+                <Route path="/blog" element={isLoggedIn ? <Blog /> : <Navigate to="/login" />} />
+                <Route path="/books/for-sales" element={isLoggedIn ? <BooksForSale /> : <Navigate to="/login" />} />
+                <Route path="/books/library" element={isLoggedIn ? <Library /> : <Navigate to="/login" />} />
               </DefaultLayout>
             }
           />

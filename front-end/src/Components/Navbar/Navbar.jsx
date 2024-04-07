@@ -4,11 +4,13 @@ import logo from '../Assets/logo.png'
 import {Link} from 'react-router-dom'
 import { StoreContext } from "../../Context/setNavElementsContext"
 import {actions} from '../../Context/setNavElementsContext'
+import { useLocation } from 'react-router-dom';
 
 
 
 export const Navbar = ({setIsLoggedIn}) => {
     const [state, dispatch] = useContext(StoreContext)
+    const location = useLocation()
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -24,6 +26,19 @@ export const Navbar = ({setIsLoggedIn}) => {
             }
         })
     },[])
+
+    useEffect(() => {
+        if(location.pathname === '/'){
+            dispatch(actions.setElement("HOME"))
+        }
+        if(location.pathname === '/books/library' || location.pathname === '/books/for-sales'){
+            dispatch(actions.setElement("BOOKS"))
+        }
+        if(location.pathname === '/blog'){
+            dispatch(actions.setElement("BLOG"))
+        }
+    },[location.pathname])
+
 
     const handleClick = (value) => {
         dispatch(actions.setElement(value))
@@ -49,11 +64,11 @@ export const Navbar = ({setIsLoggedIn}) => {
             </Link>
             <ul className="nav-menu">
                 <li className='nav-elements' onClick={() => handleClick('HOME')}><Link className="link-style" to='/'><p>HOME</p></Link> {state === 'HOME' ? <hr/> : <></>}</li>
-                <li className='nav-elements' onClick={() => handleClick('BOOKS')}><Link className="link-style" to='/books/library'><p>BOOKS</p></Link> {state === 'BOOKS' ? <hr/> : <></>}
+                <li className='nav-elements' ><p>BOOKS</p> {state === 'BOOKS' ? <hr/> : <></>}
                     <div className='books-section'>
                         <ul>
-                            <li><Link className="link-style" to='/books/library'><p>LIBRARY</p></Link></li>
-                            <li><Link className="link-style" to='/books/for-sales'><p>BOOKS FOR SALE</p></Link></li>
+                            <li onClick={() => handleClick('BOOKS')}><Link className="link-style" to='/books/library'><p>LIBRARY</p></Link></li>
+                            <li onClick={() => handleClick('BOOKS')}><Link className="link-style" to='/books/for-sales'><p>BOOKS FOR SALE</p></Link></li>
                         </ul>
                     </div>
                 </li>
