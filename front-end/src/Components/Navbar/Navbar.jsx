@@ -64,7 +64,7 @@ export const Navbar = ({setIsLoggedIn}) => {
             </Link>
             <ul className="nav-menu">
                 <li className='nav-elements' onClick={() => handleClick('HOME')}><Link className="link-style" to='/'><p>HOME</p></Link> {state === 'HOME' ? <hr/> : <></>}</li>
-                <li className='nav-elements' ><p>BOOKS</p> {state === 'BOOKS' ? <hr/> : <></>}
+                <li className='nav-elements'><p>BOOKS</p> {state === 'BOOKS' ? <hr/> : <></>}
                     <div className='books-section'>
                         <ul>
                             <li onClick={() => handleClick('BOOKS')}><Link className="link-style" to='/books/library'><p>LIBRARY</p></Link></li>
@@ -74,7 +74,7 @@ export const Navbar = ({setIsLoggedIn}) => {
                 </li>
                 <li  className='nav-elements'onClick={() => handleClick('BLOG')}><Link className="link-style" to='/blog'><p>BLOG</p></Link> {state === 'BLOG' ? <hr/> : <></>}</li>
             </ul>
-            <div className="login">
+            <div className="logout">
                 <button onClick={handleLogout}><p>LOG OUT</p></button>
             </div>
         </div>

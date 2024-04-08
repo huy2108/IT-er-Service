@@ -126,7 +126,7 @@
 
 }
 
-.login button {
+.logout button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -142,11 +142,11 @@
     color: black;
     box-shadow: 1px 1px 5px #888888;
 }
-.login button:hover{
+.logout button:hover{
     background-color: #e1ac00;
     color:white;
 }
-.login button:active{
+.logout button:active{
     background-color: #af8705;
     color:white;
 }
