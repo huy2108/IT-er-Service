@@ -9,9 +9,6 @@ const morgan = require('morgan');
 const express = require('express');
 require('dotenv').config()
 
-const jwtSecret = process.env.JWT_SECRET
-module.exports = jwtSecret
-console.log(jwtSecret)
 
 // Initialize the Express application
 const app = express()
@@ -36,9 +33,35 @@ app.use(express.json())
 app.use(methodOverride('_method'))
 app.use(morgan('combined'));
 
+// Configuration of Multer
+const storage = multer.diskStorage({
+  destination: path.join(__dirname, '/upload/images'),
+  filename: (req,file,cb) => {
+    return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
+  }
+})
+
+const upload = multer({storage: storage})
+
+app.use(express.static(path.join(__dirname,'upload')))
+
+app.post('/book/upload',upload.fields([{
+  name: "bookCover", maxCount: 1
+}, {
+  name: "bookContent", maxCount: 1
+}
+]),(req,res)=> {
+
+    return res.json(
+      {
+        success: 1,
+        image_url: req.files
+      }
+    )
+})
+
+
 route(app)
-
-
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);

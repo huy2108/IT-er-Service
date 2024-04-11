@@ -1,11 +1,5 @@
 const User = require("../Models/User");
-const jwt = require('jsonwebtoken')
-// const bcrypt = require('bcrypt');
-// setTimeout(() => {
-//     const jwtSecret = require('../../index')
-//     console.log(jwtSecret); // jwtSecret will be defined here
-//   }, 1000); // Adjust the delay time as needed (in milliseconds)
-  
+const jwt = require('jsonwebtoken')  
 
 class UserController {
 
@@ -47,7 +41,7 @@ class UserController {
                     return Promise.reject({status: 401, message: "Invalid username or password"})
                 }
 
-                    const jwtSecret = require('../../index')
+                    const jwtSecret= process.env.JWT_SECRET
                     const token = jwt.sign({userId: user._id}, jwtSecret, {expiresIn:'5h'})
                     return res.status(200).json({token})
                 

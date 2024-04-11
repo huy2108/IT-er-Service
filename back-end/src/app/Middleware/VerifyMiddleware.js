@@ -9,7 +9,7 @@ const verifyToken = (req, res, next) => {
   
     // Verify the token
     
-      const jwtSecret = require('../../index')
+      const jwtSecret = process.env.JWT_SECRET
       jwt.verify(token, jwtSecret, (err, decoded) => {
         if (err) {
           console.error('Error verifying token:', err);
