@@ -144,12 +144,15 @@
     /* text-align: center; */
 }
 .footer-nav .useful-link li {
-    cursor: pointer;
     color: white;
+    /* border: 1px solid red; */
     margin-top: 5px;
     list-style-type: none;
     font-weight: 300;
     /* text-decoration: underline; */
+}
+.footer-nav .useful-link li .link-style-footer {
+    cursor:pointer;
 }
 .footer-contact .contact-us li {
     position: relative;

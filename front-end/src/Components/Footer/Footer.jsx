@@ -48,10 +48,10 @@ export const Footer = () => {
               <div className="footer-nav">
                 <h2>Useful Link</h2>
                 <ul className="useful-link">
-                  <li onClick={() => updateNavElements('HOME')}><Link className="link-style-footer" to='/'>Home</Link></li>
-                  <li onClick={() => updateNavElements('BOOKS')}><Link className="link-style-footer" to='/books/library'>Library</Link></li>
-                  <li onClick={() => updateNavElements('BOOKS')}><Link className="link-style-footer" to='/books/for-sale'>Books for sale</Link></li>
-                  <li onClick={() => updateNavElements('BLOG')}><Link className="link-style-footer" to='/blog'>Blog</Link></li>
+                  <li><Link onClick={() => updateNavElements('HOME')} className="link-style-footer" to='/'>Home</Link></li>
+                  <li><Link onClick={() => updateNavElements('BOOKS')} className="link-style-footer" to='/books/library'>Library</Link></li>
+                  <li><Link onClick={() => updateNavElements('BOOKS')} className="link-style-footer" to='/books/for-sale'>Books for sale</Link></li>
+                  <li><Link onClick={() => updateNavElements('BLOG')}className="link-style-footer" to='/blog'>Blog</Link></li>
                 </ul>
               </div>
               {/* <div className="footer-product">
