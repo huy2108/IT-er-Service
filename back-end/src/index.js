@@ -19,9 +19,11 @@ const db = require('./config/db/index')
 db.connect()
 
 // Allow https://localhost:3000 from front-end
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:5173'];
+
 app.use(cors({
-    origin: 'http://localhost:3000'
-  }));
+  origin: allowedOrigins
+}));
 
 // Encoded for POST, PUT, PATCH, DELETE methods
 app.use(express.urlencoded({
@@ -52,10 +54,21 @@ app.post('/book/upload',upload.fields([{
 }
 ]),(req,res)=> {
 
+  const objectList = req.files;
+  const image_url = {};
+  
+  for (const key in objectList) {
+    if (Object.hasOwnProperty.call(objectList, key)) {
+      const file = objectList[key][0];
+      const name = `${key}_url`;
+      image_url[name] = `http://localhost:4000/images/${file.filename}`;
+    }
+  }
+
     return res.json(
       {
         success: 1,
-        image_url: req.files
+        image_url
       }
     )
 })

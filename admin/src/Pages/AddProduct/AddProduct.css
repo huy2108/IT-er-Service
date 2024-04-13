@@ -1,0 +1,119 @@
+.title{
+    position: absolute;
+    left: 46%;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.addProductForm {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #b6b6b6;
+    /* background-color: white; */
+    left: 21%;
+    top:27%;
+    padding-left: 20px;
+    border-radius: 20px 20px;
+}
+
+.addProductForm input {
+    margin-top: 5px;
+    
+    display: block;
+}
+.addProductForm input[type=text]{
+    height: 50px;
+    width: 250px;
+    border: 1px solid #c7c7c7;
+    border-radius: 20px 20px;
+    outline: none;
+    font-size: 12px;
+    text-indent: 30px;
+    /* border: 1px solid green; */
+}
+
+.addProductForm input[type=file]{
+    /* border: 1px solid black; */
+    height: 30px;
+}
+
+
+.addProductForm input[type=text]:focus{
+    border: 1px solid #125eaaec;
+    
+}
+
+.input-text{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.input-text h2{
+    font-size: 16px;
+    /* border: 1px solid red; */
+    font-weight: 600;
+}
+.input-file{
+    margin-top: 20px;
+}
+
+.input-file label {
+    font-weight: 600;
+}
+
+.addProductForm button {
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
+    width:100px;
+    height: 40px;
+    border-radius: 20px 20px;
+    border: none;
+    background-color: #0e5092dd;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.addProductForm button:hover{
+    background-color: #073c71dd;
+}
+.addProductForm button:active{
+    background-color: #002b55dd;
+}
+
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease forwards, slideOut 0.5s ease forwards 2s;
+    display: none;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
