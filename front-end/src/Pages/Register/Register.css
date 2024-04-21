@@ -59,7 +59,6 @@
     margin-top: 10px;
 }
 .register-container .register-form .register-data-field li input:focus{
-    
     border-color: #125eaaec;
     box-shadow: 0 3px 6px #dedede;
 }
@@ -80,6 +79,10 @@
 .register-container .register-form .register-submit:hover{
     background-color: #125eaaec;
 }
+.register-container .register-form .register-submit:active{
+    background-color: #002b55dd;
+}
+
 .register-container .direct-login {
     position: absolute;
     text-align: center;
@@ -90,11 +93,11 @@
     /* border: 1px solid red; */
     bottom: 0;
 }
-.register-container .direct-login a{
+.register-container .direct-login .login-link{
     text-decoration: none;
     color: #0c7bebec;
 }
-.register-container .direct-login a:active{
+.register-container .direct-login .login-link:active{
     color: #033a72ec;
 }
 .register-container .register-form .register-data-field li .eye{

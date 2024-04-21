@@ -8,7 +8,8 @@ const Book = new Schema({
     description: { type: String, required: true},
     author: { type: String, required: true},
     bookCover: {type: String, required: true},
-    bookContent: {type: String, required: true}
+    bookContent: {type: String, required: true},
+    genre: {type: String, require: true}
   },{
     timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' }
   }

@@ -3,6 +3,7 @@ import './login.css'
 import eyeBlue from '../../Components/Assets/eyeBlue.png'
 import eye from '../../Components/Assets/eye.png'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 
 export const LoginSignup = ({setIsLoggedIn, setLoading}) => {
@@ -95,8 +96,8 @@ export const LoginSignup = ({setIsLoggedIn, setLoading}) => {
         </form>
         <div className="register-para">
             <p>
-              Don't have an account?
-              <a href="/register"> Signup</a>
+              Don't have an account? 
+              <Link className='register' to='/register'> Signup</Link>
             </p>
           </div>
       </div>

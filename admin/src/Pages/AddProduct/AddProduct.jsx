@@ -11,7 +11,8 @@ export const AddProduct = () => {
     description: '',
     author: '',
     bookCover: '',
-    bookContent: ''
+    bookContent: '',
+    genre: ''
   })
   
   const handleSetBookDetails = (e) => {
@@ -58,7 +59,8 @@ export const AddProduct = () => {
           description: '',
           author: '',
           bookCover: '',
-          bookContent: ''
+          bookContent: '',
+          genre: ''
         })
         bookCoverValue.value = null
         bookContentValue.value = null 
@@ -90,6 +92,10 @@ export const AddProduct = () => {
         <div className='input-text'>
           <h2>Author</h2>
           <input value={bookDetails.author} onChange={(e) => handleSetBookDetails(e)} type="text" name='author' id='author' placeholder='Enter an author of a book' required/>
+        </div>
+        <div className='input-text'>
+          <h2>Genre</h2>
+          <input value={bookDetails.genre} onChange={(e) => handleSetBookDetails(e)} type="text" name='genre' id='genre' placeholder='Enter a genre' required/>
         </div>
         <div className='input-file'>
           <label htmlFor="bookCover">Book Cover</label>      

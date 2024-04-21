@@ -5,14 +5,43 @@ class BookController {
 
     // [GET] Get all books
     getAllBooks(req,res){
-        const allBooks = Book.find({})
+        Book.find({})
+            .then(allBooks => {
+                return res.send(allBooks)
+            })
+            .catch(error => {
+                return res.status(500).send('Internal Server Error')
+            })
+    }
 
-        return res.send(allBooks)
+
+    // [GET] Get a specific genre of book
+    getGenre(req,res) {
+        const genre = req.query.genre
+
+        Book.find({genre})
+            .then(book => {
+                res.send(book)
+            })
+            .catch(error => {
+                return res.status(500).send('Internal Server Error')
+            })
+    }
+
+    // [GET] Get all genres 
+    getAllGenres(req,res){
+        Book.distinct('genre')
+            .then(genres => {
+                return res.send(genres)
+            })
+            .catch(error => {
+                return res.status(500).send('Internal Server Error')
+            })
     }
 
     // [POST] Add a new book
     add(req,res){
-        const {name, description, author, bookCover, bookContent} = req.body
+        const {name, description, author, bookCover, bookContent, genre} = req.body
 
         Book.findOne({name})
             .then(book => {
@@ -25,7 +54,8 @@ class BookController {
                     description,
                     author,
                     bookCover,
-                    bookContent
+                    bookContent,
+                    genre
                 })
                 newBook.save()
 

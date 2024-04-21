@@ -3,7 +3,7 @@
     /* border: 1px solid black; */
     background-color: rgb(252, 252, 228);
     width: 270px;
-    height: calc(100vh - 110px);
+    height: calc(100% - 110px);
     display: flex;
     flex-direction: column;
     align-items: center;

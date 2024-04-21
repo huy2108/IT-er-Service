@@ -157,6 +157,10 @@
 .login-container .form .login-details button:hover{
     background-color: #125eaaec;
 }
+.login-container .form .login-details button:active{
+    background-color: #002b55dd;
+}
+
 .login-container .register-para {
     position: absolute;
     /* background-color: red; */
@@ -176,10 +180,10 @@
     /* border: 1px solid red; */
     width: 100%;
 }
-.login-container .register-para p a{
+.login-container .register-para p .register{
     text-decoration: none;
     color: #0c7bebec;
 }
-.login-container .register-para p a:active{
+.login-container .register-para p .register:active{
     color: #033a72ec;
 }

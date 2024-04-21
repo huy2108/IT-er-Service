@@ -4,6 +4,7 @@ import './Register.css'
 import eyeBlue from '../../Components/Assets/eyeBlue.png'
 import eye from '../../Components/Assets/eye.png'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 
 export const Register = () => {
@@ -85,7 +86,7 @@ export const Register = () => {
                 <button className='register-submit'>Sign Up</button>
                 <p className="direct-login">
                     Already a memeber?
-                    <a href="/login"> Log in</a>
+                    <Link className='login-link' to='/login'> Log in</Link>
                 </p>
             </form>
         </div>

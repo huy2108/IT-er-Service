@@ -38,6 +38,9 @@
     transform: translateY(-50%);
     cursor: pointer;
     user-select: none;
+    /* border-color: #125eaaec; */
+    box-shadow: 0 3px 6px #6b6b6b;
+    border-radius: 200px 200px;
 }
 .avatar img{
     width: 100%;

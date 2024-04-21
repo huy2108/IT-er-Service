@@ -8,7 +8,7 @@
 .addProductForm {
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 600px;
     border: 1px solid #b6b6b6;
     /* background-color: white; */
     left: 21%;
@@ -41,7 +41,7 @@
 
 .addProductForm input[type=text]:focus{
     border: 1px solid #125eaaec;
-    
+    box-shadow: 0 3px 6px #a1a1a1;
 }
 
 .input-text{
@@ -88,8 +88,8 @@
     top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: green;
+    color: white;
     border-radius: 5px;
     animation: slideIn 0.5s ease forwards, slideOut 0.5s ease forwards 2s;
     display: none;
