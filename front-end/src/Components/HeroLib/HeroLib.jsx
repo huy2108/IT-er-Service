@@ -109,16 +109,17 @@ export const HeroLib = () => {
                     })}
                 </div>
                 <div className="bookcase">
+                    <h2>{category} Books</h2>
                     {stateBook &&
                         allBooks.map(book => {
                             return(
                                 <div key={book.name} className="book">
                                     <img src={book.bookCover} alt="Book Cover" />
+                                    <p>{book.name}</p>
                                 </div>
                             )
                         })
                     }
-                    {}
                 </div>
             </div>
             

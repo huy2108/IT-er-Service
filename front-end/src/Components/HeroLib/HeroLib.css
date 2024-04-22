@@ -92,28 +92,40 @@
     flex: 0.23;
     height: 300px;
     min-height: 300px;
+    margin-top: 30px;
 }
 .bookcase{
+    position: relative;
     border: 1px solid black;
     flex: 0.50;
-    min-height: 500px;
+    min-height: 100vh;
+    /* height: 80vh; */
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    
 }
 .bookcase .book {
     cursor: pointer;
     margin: 25px;
+    margin-top: 120px;
     margin-left: 33px;
     /* display: inline-block; */
     height: 240px;
     /* width: 100px; */
     border: 1px solid red;
-    flex: 0 0 calc(33.33% - 60px)
+    flex: 0 0 calc(33.33% - 60px);
+    
 }
 .book img {
     height: 100%;
     width: 100%;
+}
+.book p {
+    /* border: 1px solid green; */
+    text-align: left;
+    font-size: 14px;
 }
 .category{
     display: flex;
@@ -123,4 +135,15 @@
 }
 .category input{
     margin-right: 10px;
+    /* background-color: white/; */
+}
+.categories h2{
+    font-weight: 600;
+}
+.bookcase h2 {
+    position: absolute;
+    /* border: 1px solid black; */
+    margin-left: 33px;
+    font-weight: 500;
+    font-size: 36px;
 }
