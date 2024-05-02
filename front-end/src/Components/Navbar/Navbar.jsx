@@ -31,7 +31,7 @@ export const Navbar = ({setIsLoggedIn}) => {
         if(location.pathname === '/'){
             dispatch(actions.setElement("HOME"))
         }
-        if(location.pathname === '/books/library' || location.pathname === '/books/for-sales'){
+        if(location.pathname.includes('/books/library') || location.pathname === '/books/for-sales'){
             dispatch(actions.setElement("BOOKS"))
         }
         if(location.pathname === '/blog'){

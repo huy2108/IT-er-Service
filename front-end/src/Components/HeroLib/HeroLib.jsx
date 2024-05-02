@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './HeroLib.css'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 export const HeroLib = () => {
 
@@ -103,7 +104,7 @@ export const HeroLib = () => {
                                         id={genre} 
                                         onChange={e => handleCheckbox(e.target.value)}
                                     />
-                                    <p>{genre}</p>
+                                    <label htmlFor={genre}>{genre}</label>
                                 </div>
                             )
                     })}
@@ -113,10 +114,10 @@ export const HeroLib = () => {
                     {stateBook &&
                         allBooks.map(book => {
                             return(
-                                <div key={book.name} className="book">
+                                <Link key={book.name} className="book" to={`${book.slug}`}>
                                     <img src={book.bookCover} alt="Book Cover" />
                                     <p>{book.name}</p>
-                                </div>
+                                </Link>
                             )
                         })
                     }

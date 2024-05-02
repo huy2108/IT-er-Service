@@ -83,7 +83,7 @@
 
 .nav-menu li:hover .books-section {
     display: block;
-    
+    /* border: 1px solid red;   */
 }
 
 .nav-menu li .books-section li{
@@ -93,6 +93,7 @@
     font-weight: 500;
     height:50%;
     width: 100%;
+    /* bottom: 0; */
 }
 
 .nav-menu li .books-section li p{
@@ -123,7 +124,6 @@
 .nav-menu li:hover {
     background-color: #cdcdcd;
     border-radius: 10px 10px;
-
 }
 
 .logout button {
@@ -160,9 +160,9 @@
     margin-top: 15px;
 }
 hr.shrink{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-top: 0px;
 }
-.shrink .nav-menu > li {
+/* .shrink .nav-menu > li {
     height: 56px;
-}
+} */

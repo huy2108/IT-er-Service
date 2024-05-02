@@ -11,6 +11,7 @@ import { Register } from './Pages/Register/Register'
 import React, {useState, useEffect } from 'react'
 import axios from 'axios'
 import { LoadingPage } from './Components/LoadingPage/LoadingPage';
+import { BookDetails } from './Pages/BookDetails/BookDetails';
 
 
 
@@ -57,6 +58,7 @@ function App() {
               <Route path="/blog" element={isLoggedIn ? <Blog /> : <Navigate to="/login" />} />
               <Route path="/books/for-sales" element={isLoggedIn ? <BooksForSale /> : <Navigate to="/login" />} />
               <Route path="/books/library" element={isLoggedIn ? <Library /> : <Navigate to="/login" />} />
+              <Route path="/books/library/:slug" element={isLoggedIn ? <BookDetails /> : <Navigate to="/login" />} />
             </DefaultLayout>
           }
         />

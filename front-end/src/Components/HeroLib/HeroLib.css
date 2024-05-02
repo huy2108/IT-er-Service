@@ -104,6 +104,7 @@
     flex-wrap: wrap;
     /* justify-content: space-between; */
     /* align-items: flex-start; */
+    margin-bottom: 100px;
     
 }
 .bookcase .book {
@@ -116,7 +117,7 @@
     /* width: 100px; */
     border: 1px solid red;
     flex: 0 0 calc(33.33% - 60px);
-    
+    text-decoration: none;
 }
 .book img {
     height: 100%;
@@ -126,15 +127,20 @@
     /* border: 1px solid green; */
     text-align: left;
     font-size: 14px;
+    color: black;
 }
 .category{
     display: flex;
-    justify-content: start;
-    /* border: 1px solid black; */
+    justify-content: flex-start;
+    border: 1px solid black;
     width: 100px;
+}
+.category label {
+    cursor: pointer;
 }
 .category input{
     margin-right: 10px;
+    cursor: pointer;
     /* background-color: white/; */
 }
 .categories h2{

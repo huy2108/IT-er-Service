@@ -76,6 +76,31 @@ class BookController {
     remove(req,res){
 
     }
+
+
+    // [GET] Get a specific book
+    getABook(req,res){
+
+        const slug = req.query.slug
+
+        Book.findOne({slug})
+            .then(book => {
+                if(!book){
+                    return Promise.reject({status: 401, message: "Invalid username or password"})
+                }
+
+                return res.status(200).json({book})
+            })
+            .catch(error => {
+                const status = error.status || 500
+                const message = error.message || "Internal server error"
+
+                return res.status(status).json({message})
+            })
+
+        return 
+
+    }
 }
 
 module.exports = new BookController;
