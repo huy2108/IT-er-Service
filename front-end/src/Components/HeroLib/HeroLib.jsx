@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import './HeroLib.css'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import BookSearch from '../SearchBar/BookSearch'
 
 export const HeroLib = () => {
 
@@ -23,7 +24,7 @@ export const HeroLib = () => {
     }, []);
 
     useEffect(() => {
-        if(category === ''){
+        if (category === '') {
             axios.get('http://localhost:4000/book/allbooks')
                 .then(response => {
                     setAllBooks(response.data)
@@ -38,14 +39,14 @@ export const HeroLib = () => {
                     genre: category
                 }
             })
-            .then(response => {
-                setAllBooks(response.data)
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+                .then(response => {
+                    setAllBooks(response.data)
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
         }
-    },[category])
+    }, [category])
 
     // console.log(allBooks)
 
@@ -57,11 +58,11 @@ export const HeroLib = () => {
         const onAnimationEnd = () => {
             setTimeout(() => {
                 heroTitle.classList.add('fadeInText')
-            },1000)
+            }, 1000)
             curtain.removeEventListener('animationend', onAnimationEnd);
         };
 
-         curtain.addEventListener('animationend', onAnimationEnd);
+        curtain.addEventListener('animationend', onAnimationEnd);
     }
 
     const handleMouseLeave = () => {
@@ -69,62 +70,72 @@ export const HeroLib = () => {
         const heroTitle = document.querySelector('.hero-title')
         curtain.classList.remove('fadeIn');
         heroTitle.classList.remove('fadeInText')
-        
+
     };
 
     const handleCheckbox = value => {
-        if(value === category){
+        if (value === category) {
             setCategory('')
-        }else{
+        } else {
             setCategory(value)
         }
     }
 
-  return (
-    <>
-        <div className='hero-image'>
-            <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="curtain" >
-                <h1 className='hero-title'>Window To The World</h1>
-            </div>
-        </div>
-        <div className="library-feature">
-            <h1>LIBRARY</h1>
-            <div className="books-container">
-                <div className="categories">
-                    <h2>GENRE</h2>
-                    {stateGenre && 
-                        allGenres.map(genre => {
-                            return(
-                                <div key={genre} className="category">
-                                    <input 
-                                        type="checkbox" 
-                                        checked={category === genre}
-                                        value={genre} 
-                                        name={genre} 
-                                        id={genre} 
-                                        onChange={e => handleCheckbox(e.target.value)}
-                                    />
-                                    <label htmlFor={genre}>{genre}</label>
-                                </div>
-                            )
-                    })}
-                </div>
-                <div className="bookcase">
-                    <h2>{category} Books</h2>
-                    {stateBook &&
-                        allBooks.map(book => {
-                            return(
-                                <Link key={book.name} className="book" to={`${book.slug}`}>
-                                    <img src={book.bookCover} alt="Book Cover" />
-                                    <p>{book.name}</p>
-                                </Link>
-                            )
-                        })
-                    }
+    const handleSearch = (query) => {
+        console.log('Search query:', query);
+        // Perform search logic here
+    };
+
+    return (
+        <>
+            <div className='hero-image'>
+                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="curtain" >
+                    <h1 className='hero-title'>Window To The World</h1>
                 </div>
             </div>
-            
-        </div>
-    </>
-  )
+            <div className="library-feature">
+                <h1>LIBRARY</h1>
+                <div className="books-container">
+                    <div className="searchbar">
+                        <BookSearch allBooks={allBooks} />
+                    </div>
+                    <div className="books-library">
+                        <div className="categories">
+                            <h2>GENRE</h2>
+                            {stateGenre &&
+                                allGenres.map(genre => {
+                                    return (
+                                        <div key={genre} className="category">
+                                            <input
+                                                type="checkbox"
+                                                checked={category === genre}
+                                                value={genre}
+                                                name={genre}
+                                                id={genre}
+                                                onChange={e => handleCheckbox(e.target.value)}
+                                            />
+                                            <label htmlFor={genre}>{genre}</label>
+                                        </div>
+                                    )
+                                })}
+                        </div>
+                        <div className="bookcase">
+                            <h2>{category} Books</h2>
+                            {stateBook &&
+                                allBooks.map(book => {
+                                    return (
+                                        <Link key={book.name} className="book" to={`${book.slug}`}>
+                                            <img src={book.bookCover} alt="Book Cover" />
+                                            <p>{book.name}</p>
+                                        </Link>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </>
+    )
 }

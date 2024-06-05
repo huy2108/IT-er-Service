@@ -1,0 +1,249 @@
+.commentContainer {
+    position: relative;
+    min-height: 50vh;
+    /* border: 1px solid black; */
+    padding-bottom: 100px;
+
+}
+
+.commentContainer .title {
+    font-weight: 600;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 70px;
+}
+
+.commentContainer .graph {
+    height: 235px;
+    border: 1px solid #012140dd;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.graph .line {
+    height: 100%;
+    flex: 0.2;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph .line h2 {
+    /* border: 1px solid black; */
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.graph .average h2 {
+    font-weight: 700;
+    text-align: center;
+    /* margin-top: 38px; */
+    font-size: 32px;
+    color: black;
+}
+
+.graph .average p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.graph .average {
+    height: 100%;
+    flex: 0.2;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph .average .star-rating {
+    /* border: 1px solid black; */
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.graph .average .star-rating span {
+    cursor: auto;
+}
+
+.star-rating {
+    display: inline-block;
+}
+
+.star-rating .star {
+    color: #c7c7c7;
+    font-size: 30px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.star-rating .star.active {
+    color: #1d7ededd;
+}
+
+.commentParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+    min-height: 500px;
+    border: 1px solid #012140dd;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.commentForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.nextIconComment {
+    height: 35px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    margin: 3px;
+}
+
+.comment {
+    /* border: 1px solid black; */
+    min-height: 200px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment textarea {
+    /* flex: 1; */
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+    padding: 10px;
+    /* border: 1px solid red; */
+    min-height: 150px;
+}
+
+.comment textarea:focus {
+    border: 2px solid #1d7ededd;
+    outline: none;
+}
+
+.comment button {
+    /* align-self: flex-end; */
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #4c8cccec;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.editComment {
+    justify-content: center;
+    margin-top: 0;
+    /* border: 1px solid blue; */
+}
+
+.editComment button {
+    margin: 0;
+    align-self: center;
+    height: 90px;
+    width: 170px;
+}
+
+.comment button:hover {
+    background-color: #125eaaec;
+}
+
+.comment button:active {
+    background-color: #002b55dd;
+}
+
+.comments {
+    /* border: 1px solid blue; */
+    border-top: 1px solid #012140dd;
+    width: 100%;
+    min-height: 150px;
+    margin-top: 5px;
+}
+
+.userComment {
+    border: 1px solid #012140dd;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px 20px;
+    background-color: #fbcd37;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+.comments .userIcon {
+    /* border: 1px solid black; */
+    width: 50px;
+    /* flex: 0.1; */
+    height: 50px;
+}
+
+.comments .userIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.comments .userFeeling {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+
+.comments .userFeeling p {
+    font-size: 15px;
+    font-weight: 600;
+    /* border: 1px solid green; */
+}
+
+.userCommentChild {
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+
+.userText {
+    /* border: 1px solid red; */
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: justify;
+}
+
+.commentDirection {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-right: 5px;
+}

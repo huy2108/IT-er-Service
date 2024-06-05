@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {useRef, useState} from 'react'
 import './login.css'
 import eyeBlue from '../../Components/Assets/eyeBlue.png'
 import eye from '../../Components/Assets/eye.png'
@@ -57,7 +57,7 @@ export const LoginSignup = ({setIsLoggedIn, setLoading}) => {
     axios.post('http://localhost:4000/api/login',{username, password})
       .then(response => {
         const token = response.data.token
-        console.log(token)
+        // console.log(token)
         localStorage.setItem('token', token)
         setIsLoggedIn(true)
       })

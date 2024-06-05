@@ -1,4 +1,13 @@
-.App {
+/* .App {
+
+} */
+
+:root {
+  --blue-navy: #012140dd;
+  --yellow-background: rgb(252, 252, 228);
+  --yellow-background-bright: rgb(251, 251, 205);
+  --yellow-element: #fbcd37;
+  --blue-bright: #198be1;
 }
 
 .App-logo {
@@ -31,8 +40,8 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-

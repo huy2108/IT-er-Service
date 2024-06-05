@@ -1,0 +1,13 @@
+.bookContentCurtain img {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.bookContentCurtain img:active {
+    background-color: #c7c7c7;
+}

@@ -4,7 +4,8 @@ const Book = require("../Models/Book");
 class BookController {
 
     // [GET] Get all books
-    getAllBooks(req,res){
+    getAllBooks(req, res) {
+        console.log(req.user)
         Book.find({})
             .then(allBooks => {
                 return res.send(allBooks)
@@ -16,10 +17,10 @@ class BookController {
 
 
     // [GET] Get a specific genre of book
-    getGenre(req,res) {
+    getGenre(req, res) {
         const genre = req.query.genre
 
-        Book.find({genre})
+        Book.find({ genre })
             .then(book => {
                 res.send(book)
             })
@@ -29,7 +30,7 @@ class BookController {
     }
 
     // [GET] Get all genres 
-    getAllGenres(req,res){
+    getAllGenres(req, res) {
         Book.distinct('genre')
             .then(genres => {
                 return res.send(genres)
@@ -40,13 +41,13 @@ class BookController {
     }
 
     // [POST] Add a new book
-    add(req,res){
-        const {name, description, author, bookCover, bookContent, genre} = req.body
+    add(req, res) {
+        const { name, description, author, bookCover, bookContent, genre } = req.body
 
-        Book.findOne({name})
+        Book.findOne({ name })
             .then(book => {
-                if(book){
-                    return Promise.reject({status: 401, message: "Book already existed"})
+                if (book) {
+                    return Promise.reject({ status: 401, message: "Book already existed" })
                 }
 
                 const newBook = new Book({
@@ -68,37 +69,35 @@ class BookController {
                 const status = error.status || 500
                 const message = error.message || "Internal server error"
 
-                return res.status(status).json({message})
+                return res.status(status).json({ message })
             })
     }
 
     // [DELETE] Delete a specific book
-    remove(req,res){
+    remove(req, res) {
 
     }
 
 
     // [GET] Get a specific book
-    getABook(req,res){
+    getABook(req, res) {
 
         const slug = req.query.slug
 
-        Book.findOne({slug})
+        Book.findOne({ slug })
             .then(book => {
-                if(!book){
-                    return Promise.reject({status: 401, message: "Invalid username or password"})
+                if (!book) {
+                    return Promise.reject({ status: 401, message: "Invalid username or password" })
                 }
 
-                return res.status(200).json({book})
+                return res.status(200).json({ book })
             })
             .catch(error => {
                 const status = error.status || 500
                 const message = error.message || "Internal server error"
 
-                return res.status(status).json({message})
+                return res.status(status).json({ message })
             })
-
-        return 
 
     }
 }

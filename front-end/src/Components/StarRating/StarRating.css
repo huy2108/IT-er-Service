@@ -1,0 +1,26 @@
+/* src/StarRating.css */
+.star-rating {
+    display: inline-block;
+    /* font-size: 2rem; */
+    line-height: 1;
+}
+
+.star {
+    display: inline-block;
+    position: relative;
+    color: gray;
+}
+
+.star.partial {
+    background: linear-gradient(90deg, #1d7ededd var(--fill), #c7c7c7 var(--fill));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.star.empty {
+    color: #c7c7c7;
+}
+
+.star.emptyColor {
+    color: #012140dd;
+}
