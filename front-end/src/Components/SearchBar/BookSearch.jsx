@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
 import './BookSearch.css';  // Import the CSS file
 
-const BookSearch = ({ allBooks }) => {
+const BookSearch = ({ allBooks, setAllBooks }) => {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [books, setBooks] = useState([]);
     const fuseRef = useRef(null);
 
     useEffect(() => {
-        if (allBooks && allBooks.length > 0) {
+        if (allBooks && allBooks.length > 1) {
             setBooks(allBooks);
         }
     }, [allBooks]);
@@ -35,9 +35,23 @@ const BookSearch = ({ allBooks }) => {
         } else {
             setResults([]);
         }
+
     };
 
-    console.log(results)
+    // console.log(results)
+
+    const handleSeeAll = () => {
+        setAllBooks(books)
+        setQuery('')
+    }
+
+    const handleSeeABook = book => {
+        setAllBooks([book])
+    }
+
+    const handleXSearch = () => {
+        setQuery('')
+    }
 
     return (
         <div className="book-search-container">
@@ -48,10 +62,14 @@ const BookSearch = ({ allBooks }) => {
                 placeholder="Search for a book"
                 className="book-search-input"
             />
+            <div onClick={handleXSearch} className="xSearch"></div>
             {query !== '' &&
                 <ul className="book-search-results">
+                    {allBooks && allBooks.length === 1 &&
+                        <div onClick={handleSeeAll} className='see-all-books'>-- SEE ALL BOOKS --</div>
+                    }
                     {results.map((book, index) => (
-                        <li key={index}>{book.name}</li>
+                        <li onClick={() => handleSeeABook(book)} key={index}>{book.name}</li>
                     ))}
                     {query !== '' && results.length === 0 && (
                         <div className="no-results">-- No results found --</div>

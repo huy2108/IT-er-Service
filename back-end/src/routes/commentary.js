@@ -10,6 +10,7 @@ route.get('/allComments', commentaryController.getAllComments)
 route.get('/allCommentsStar', commentaryController.getAllCommentsStar)
 route.get('/findUser', commentaryController.findUser)
 route.patch('/updateComment', commentaryController.updateComment)
+route.delete('/deleteComment', commentaryController.deleteComment)
 
 
 module.exports = route;

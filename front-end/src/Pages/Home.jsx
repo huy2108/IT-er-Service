@@ -17,13 +17,13 @@ export const Home = () => {
 
   return (
     <div>
-      <Hero/>
+      <Hero />
       <div className="ribbon">
-            <p onClick={scrollToAboutUs}>About Us</p>
-            <p onClick={scrollToWhoWeAre}>Who we are</p>
+        <p onClick={scrollToAboutUs}>About Us</p>
+        <p onClick={scrollToWhoWeAre}>Who we are</p>
       </div>
-      <AboutUs/>
-      <WhoWeAre/>
+      <AboutUs />
+      <WhoWeAre />
     </div>
   )
 }

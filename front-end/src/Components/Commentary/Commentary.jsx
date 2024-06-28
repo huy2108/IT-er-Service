@@ -5,8 +5,7 @@ import StarRating from '../StarRating/StarRating'
 import { CommentForm } from '../CommentForm/CommentForm'
 import { HonrizontalBarRating } from '../HorizontalBarRating'
 import userIcon from '../Assets/userIcon.png'
-import nextIcon from '../Assets/nextIcon.png'
-import prevIcon from '../Assets/prevIcon.png'
+import { ArrowDirection } from '../ArrowDirection/ArrowDirection'
 
 export const Commentary = (props) => {
 
@@ -36,12 +35,16 @@ export const Commentary = (props) => {
         }
       })
         .then(res => {
+          console.log(res.data)
           setLength(res.data.length)
           calculateAverageRating(res.data);
           calculateStar(res.data)
         })
         .catch(err => {
           console.log(err)
+          calculateAverageRating();
+          calculateStar()
+          setLength(0)
         })
 
 
@@ -82,6 +85,9 @@ export const Commentary = (props) => {
 
 
   }, [editState])
+
+  console.log(user)
+  // console.log(name)
 
   useEffect(() => {
 
@@ -171,19 +177,6 @@ export const Commentary = (props) => {
     }
   }, [allComments])
 
-  const prevComment = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
-
-  const nextComment = () => {
-    if (currentIndex < allComments.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-
   const calculateSetName = data => {
 
     var newName = data;
@@ -249,35 +242,46 @@ export const Commentary = (props) => {
   // console.log(allComments)
 
   const calculateStar = (data) => {
-    const length = data.length;
-    const newRatings = []; // Initialize a new array to store ratings
+    if (data) {
+      const length = data.length;
+      const newRatings = []; // Initialize a new array to store ratings
 
-    for (let i = 1; i <= 5; i++) {
-      let count = 0;
-      data.forEach(object => {
-        if (object.star === i) {
-          count += 1;
-        }
-      });
-      newRatings.push(count / length); // Use push to add elements to the array
+      for (let i = 1; i <= 5; i++) {
+        let count = 0;
+        data.forEach(object => {
+          if (object.star === i) {
+            count += 1;
+          }
+        });
+        newRatings.push(count / length); // Use push to add elements to the array
+      }
+
+      setRatings(newRatings); // Update the state with the new ratings array
     }
-
-    setRatings(newRatings); // Update the state with the new ratings array
+    else {
+      setRatings([0, 0, 0, 0, 0])
+    }
   };
+
+  // console.log(ratings)
 
 
   const calculateAverageRating = (comments) => {
-    const totalStars = comments.reduce((acc, comment) => {
-      if (comment.star) {
-        return acc + comment.star;
-      }
-      return acc; // Return accumulator unchanged if comment has no star
-    }, 0);
+    if (comments) {
+      const totalStars = comments.reduce((acc, comment) => {
+        if (comment.star) {
+          return acc + comment.star;
+        }
+        return acc; // Return accumulator unchanged if comment has no star
+      }, 0);
 
-    const length = comments.length
-    const average = (totalStars / length).toFixed(1);
+      const length = comments.length
+      const average = (totalStars / length).toFixed(1);
 
-    setAverageRating(average);
+      setAverageRating(average);
+    } else {
+      setAverageRating(0)
+    }
   };
 
   // const handleStarHover = (index) => {
@@ -370,12 +374,33 @@ export const Commentary = (props) => {
     }
   }
 
+  const handleDeleteComment = () => {
+    axios.delete('http://localhost:4000/commentary/deleteComment', {
+      params: {
+        userId: user._id
+      }
+    })
+      .then(response => {
+        // console.log(user)
+        console.log(response)
+        const curtain = document.getElementById('readingFeatureCurtain')
+        const editForm = document.getElementById('editForm')
 
-  // console.log(name[0].firstname)
-  // console.log(user)
-  // console.log(content)
-  // console.log(choseRating)
-  // console.log(rating)
+        if (editForm || curtain) {
+          editForm.style.display = 'none'
+          curtain.style.display = 'none'
+        }
+        setEditState(!editState)
+        setState(true)
+
+        setContent('')
+        setRating(0)
+        setChoseRating(0)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
   return (
     <div className='commentContainer'>
@@ -388,6 +413,7 @@ export const Commentary = (props) => {
           setRating={setRating}
           setChoseRating={setChoseRating}
           handleAction={handleEditForm}
+          handleDelete={handleDeleteComment}
         />
       </div>
       <h1 className='title'>Your Feeling</h1>
@@ -412,6 +438,7 @@ export const Commentary = (props) => {
             setChoseRating={setChoseRating}
             setRating={setRating}
             choseRating={choseRating}
+            adjust="margin-bottom"
           />
           // <form onSubmit={handleCommentary} className="commentForm">
 
@@ -443,14 +470,12 @@ export const Commentary = (props) => {
             </div>
           </div>
         }
-        <div className="commentDirection">
-          {currentIndex !== 0 &&
-            <img onClick={prevComment} src={prevIcon} alt="" className='nextIconComment' />
-          }
-          {currentIndex < name.length - 1 &&
-            <img onClick={nextComment} src={nextIcon} alt="" className='nextIconComment' />
-          }
-        </div>
+        <ArrowDirection
+          amount={1}
+          setCurrentIndex={setCurrentIndex}
+          length={name ? name.length : 0}
+          currentIndex={currentIndex}
+        />
         <div className="comments">
           {name.slice(currentIndex, currentIndex + 1).map((comment, index) => {
             return (
@@ -463,9 +488,12 @@ export const Commentary = (props) => {
                     {comment.fullname &&
                       <>
                         <p>{comment.fullname.firstname} {comment.fullname.lastname}</p>
-                        {comment.star &&
-                          <StarRating rating={comment.star} emptyColor={'emptyColor'} />
-                        }
+                        <div>
+                          {comment.star &&
+
+                            <StarRating rating={comment.star} emptyColor={'emptyColor'} />
+                          }
+                        </div>
                       </>
                     }
                   </div>

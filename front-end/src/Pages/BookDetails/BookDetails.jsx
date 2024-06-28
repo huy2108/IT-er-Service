@@ -9,16 +9,18 @@ import fb from '../../Components/Assets/facebook.png'
 import twitter from '../../Components/Assets/twitter.png'
 import linkedin from '../../Components/Assets/linkedinBlue.png'
 import { saveAs } from 'file-saver';
-import * as Icon from 'react-feather';
-import { Link } from 'react-router-dom'
+// import * as Icon from 'react-feather';
+// import { Link } from 'react-router-dom'
 import { Commentary } from '../../Components/Commentary/Commentary'
+import { BookChain } from '../../Components/BookChain/BookChain'
 
 export const BookDetails = () => {
 
   const { slug } = useParams();
   const [book, setBook] = useState()
   const [allBooks, setAllBooks] = useState()
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [sameGenreBook, setSameGenreBook] = useState()
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
 
   useEffect(() => {
@@ -34,14 +36,42 @@ export const BookDetails = () => {
         console.log(err)
       })
 
-    axios.get('http://localhost:4000/book/allbooks')
-      .then(response => {
-        setAllBooks(response.data)
-      })
-
     window.scrollTo(0, 0)
 
   }, [slug])
+
+  useEffect(() => {
+
+    if (book) {
+      axios.get('http://localhost:4000/book/allbooks')
+        .then(response => {
+          var books = response.data
+          books = books.filter(item => item._id !== book._id)
+          setAllBooks(books)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+
+
+
+      axios.get('http://localhost:4000/book/getGenre', {
+        params: {
+          genre: book.genre
+        }
+      })
+        .then(res => {
+          var books = res.data
+          books = books.filter(item => item._id !== book._id)
+          setSameGenreBook(books)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+
+
+  }, [book])
 
 
 
@@ -71,17 +101,17 @@ export const BookDetails = () => {
     }
   };
 
-  const prevBook = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
+  // const prevBook = () => {
+  //   if (currentIndex > 0) {
+  //     setCurrentIndex(currentIndex - 1);
+  //   }
+  // };
 
-  const nextBook = () => {
-    if (currentIndex < allBooks.length - 5) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
+  // const nextBook = () => {
+  //   if (currentIndex < allBooks.length - 5) {
+  //     setCurrentIndex(currentIndex + 1);
+  //   }
+  // };
 
 
   return (
@@ -119,7 +149,8 @@ export const BookDetails = () => {
       </div>
       <Curtain />
       <embed className='bookContent' id='readingFeatureContent' src={book ? book.bookContent : ''} type="application/pdf" />
-      <div className="relatedBookContainer">
+      <BookChain books={sameGenreBook} amount={5} header='Relating Books' />
+      {/* <div className="relatedBookContainer">
         <h1>Relating Books</h1>
         <div className="relatingBooks">
           <div className='carousel'>
@@ -133,8 +164,9 @@ export const BookDetails = () => {
           <Icon.ChevronLeft size={48} onClick={prevBook} className='prev' />
           <Icon.ChevronRight onClick={nextBook} className='next' size={48} />
         </div>
-      </div>
+      </div> */}
       <Commentary book={book} />
+      <BookChain books={allBooks} amount={5} header='Other Books' />
     </div>
   )
 }

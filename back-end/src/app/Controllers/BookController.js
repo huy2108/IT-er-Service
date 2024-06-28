@@ -78,7 +78,6 @@ class BookController {
 
     }
 
-
     // [GET] Get a specific book
     getABook(req, res) {
 

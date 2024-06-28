@@ -62,57 +62,20 @@
     justify-content: center;
 }
 
-.graph .average .star-rating {
-    /* border: 1px solid black; */
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-}
 
-.graph .average .star-rating span {
-    cursor: auto;
-}
-
-.star-rating {
-    display: inline-block;
-}
-
-.star-rating .star {
-    color: #c7c7c7;
-    font-size: 30px;
-    font-weight: 1000;
-    cursor: pointer;
-}
-
-.star-rating .star.active {
-    color: #1d7ededd;
-}
 
 .commentParent {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: flex-start; */
-    min-height: 500px;
+    /* min-height: 500px; */
     border: 1px solid #012140dd;
     width: 80%;
     margin: 0 auto;
 
 }
 
-.commentForm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
-}
-
-.nextIconComment {
-    height: 35px;
-    /* border: 1px solid red; */
-    cursor: pointer;
-    margin: 3px;
-}
 
 .comment {
     /* border: 1px solid black; */
@@ -176,8 +139,9 @@
     /* border: 1px solid blue; */
     border-top: 1px solid #012140dd;
     width: 100%;
-    min-height: 150px;
-    margin-top: 5px;
+    /* min-height: 150px; */
+    margin-top: 3px;
+    margin-bottom: 10px;
 }
 
 .userComment {
@@ -198,8 +162,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    /* border: 1px solid red; */
+    /* Ensure the edit form is above other elements */
     width: 80%;
+    background-color: white;
+    padding: 20px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
 }
 
 .comments .userIcon {
@@ -217,6 +185,7 @@
 .comments .userFeeling {
     /* border: 1px solid black; */
     margin-left: 10px;
+    height: 55px;
 }
 
 .comments .userFeeling p {
@@ -229,6 +198,7 @@
     display: flex;
     /* border: 1px solid red; */
     align-items: center;
+    /* height: 100%; */
 }
 
 .userText {
@@ -237,13 +207,4 @@
     margin-top: 5px;
     margin-left: 5px;
     text-align: justify;
-}
-
-.commentDirection {
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-end;
-    margin-right: 5px;
 }

@@ -1,68 +1,66 @@
-
-
-.navbar{
+.navbar {
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     height: 110px;
     background-color: white;
     box-shadow: 1px 1px 5px #888888;
-    /* border: 1px solid black; */
-    display: flex;   
+    display: flex;
     z-index: 9999;
     transition: all 0.3s ease;
 }
+
 .navbar.shrink {
     padding-bottom: 5px;
     padding-top: 5px;
     height: 80px;
 }
-.nav-logo{
-    height:100%;
-    /* border: 1px solid red; */
+
+.nav-logo {
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 70px;
     cursor: pointer;
-
 }
+
 .nav-logo img {
-    width: 90x;
-    height: 80%;   
+    width: 90px;
+    height: 80%;
     margin-right: 13px;
 }
+
 .nav-logo p {
     font-size: 28px;
     font-weight: 600;
     color: #171717;
 }
-.nav-menu{
-    position:absolute;
+
+.nav-menu {
+    position: absolute;
     display: flex;
     list-style-type: none;
     justify-content: center;
-    height:100%;
+    height: 100%;
     align-items: center;
     width: 40%;
     justify-content: space-evenly;
     font-size: 18px;
     font-weight: 450;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
 }
+
 .nav-menu li {
     cursor: pointer;
     line-height: 51px;
-    /* height: 30px; */
-    /* border: 1px solid black; */
     width: 70px;
-    text-align:center;
+    text-align: center;
     position: relative;
     text-decoration: none;
 }
-
 
 .link-style {
     text-decoration: none;
@@ -73,8 +71,6 @@
     position: absolute;
     min-width: 150px;
     height: 100px;
-    top: bottom;
-    margin-top: 0px;
     background-color: white;
     border-radius: 10px 10px;
     box-shadow: 0.5px 0.5px 5px #888888;
@@ -83,31 +79,25 @@
 
 .nav-menu li:hover .books-section {
     display: block;
-    /* border: 1px solid red;   */
 }
 
-.nav-menu li .books-section li{
-    position: relative;
+.nav-menu li .books-section li {
     list-style-type: none;
     font-size: 14px;
     font-weight: 500;
-    height:50%;
+    height: 50%;
     width: 100%;
-    /* bottom: 0; */
 }
 
-.nav-menu li .books-section li p{
+.nav-menu li .books-section li p {
     position: absolute;
-    /* top:50%; */
     left: 15px;
-    /* border:1px solid red; */
     height: 100%;
-    width:80%;
+    width: 80%;
     text-align: start;
 }
 
-
-.nav-menu li .books-section ul{
+.nav-menu li .books-section ul {
     width: 100%;
     height: 100%;
 }
@@ -126,43 +116,223 @@
     border-radius: 10px 10px;
 }
 
-.logout button {
+.logout {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 10%;
-    height:40px;
-    width: 120px;
+    height: 50px;
+    width: 50px;
+    background-image: url('/src/Components/Assets/userIcon.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    box-shadow: 1px 1px 5px #888888;
+    cursor: pointer;
+}
+
+.logout-menu {
+    position: absolute;
+    border: 1px solid var(--blue-bright);
+    width: 200px;
+    height: 140px;
+    left: 0;
+    top: 110%;
+    background-color: white;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    list-style-type: none;
+    cursor: auto;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.logout-menu.show {
+    display: flex;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.logout-menu.close {
+    display: flex;
+    animation: slide 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(5%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+        transform: translateY(5%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+        display: none;
+    }
+}
+
+.logout-items {
+    width: 70%;
+    flex: 0.38;
+    justify-self: end;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+
+.logout-items .link-style p:hover {
+    /* background-color: #c7c7c7; */
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.logout-items .link-style p {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.logout-menu li button {
     background-color: #fbcd37;
     cursor: pointer;
     border: 0;
     border-radius: 50px 50px;
+    width: 100%;
+    height: 100%;
     font-size: 18px;
     font-weight: 500;
     color: black;
     box-shadow: 1px 1px 5px #888888;
 }
-.logout button:hover{
+
+.logout button:hover {
     background-color: #e1ac00;
-    color:white;
+    color: white;
+    text-decoration: underline;
 }
-.logout button:active{
+
+.logout button:active {
     background-color: #af8705;
-    color:white;
+    color: white;
 }
+
 .nav-menu hr {
-    width:60%;
+    width: 60%;
     height: 3px;
-    background-color:#198be1;
+    background-color: var(--blue-bright);
     border-radius: 10px;
-    border:none;
+    border: none;
     margin: 0 auto;
     margin-top: 15px;
 }
-hr.shrink{
-    /* margin-bottom: 20px; */
+
+hr.shrink {
     margin-top: 0px;
 }
-/* .shrink .nav-menu > li {
-    height: 56px;
-} */
+
+.hamburger-menu {
+    display: none;
+}
+
+
+@media (max-width: 1300px) {
+    .nav-logo p {
+        /* border: 1px solid black; */
+        width: 120px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-logo p {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .logout {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .nav-elements {
+        margin: 20px 0;
+        border: 1px solid green;
+        /* position: relative; */
+    }
+
+    .hamburger-menu {
+        cursor: pointer;
+        margin-right: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        display: block;
+        background-image: url('/src/Components/Assets/hamburger.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-color: black; */
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .nav-logo p {
+        display: block;
+        width: 200px;
+    }
+
+    .hamburger-dashboard {
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        transform: translateX(100%);
+
+    }
+
+    .hamburger-dashboard.open {
+        position: fixed;
+        border: 2px solid var(--blue-bright);
+        background-color: white;
+        border-radius: 30px;
+        transform: translateX(50%);
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+        /* margin-top: 0; */
+    }
+
+    .nav-logo {
+        margin-left: 30px;
+    }
+
+
+}

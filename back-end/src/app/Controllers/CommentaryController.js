@@ -62,45 +62,44 @@ class CommentaryController {
 
     // [GET] Get a specific book based on book and commenter
     findUser(req, res) {
+        const { commenter, book } = req.query;
 
-        const { commenter, book } = req.query
-
-        Commentary.findOne({ commenter, book })
+        Commentary.findOne({ commenter, book, deleted: false })
             .then(data => {
-                if (!data || data.length === 0) {
-                    return Promise.reject({ status: 401, message: "No user found for this book" })
+                if (!data) {
+                    return Promise.reject({ status: 401, message: "No user found for this book" });
                 }
-                return res.status(200).json(data)
+                return res.status(200).json(data);
             })
             .catch(err => {
-                const errorMessage = err.message || "Internal Server Error"
-
-                return res.status(401).json(errorMessage)
-            })
+                const errorMessage = err.message || "Internal Server Error";
+                return res.status(401).json({ message: errorMessage });
+            });
     }
 
     // [GET] Get all comments of a specific book
     getAllComments(req, res) {
-        const bookId = req.query.bookId
-        Commentary.find({ book: bookId })
+        const bookId = req.query.bookId;
+
+        Commentary.find({ book: bookId, deleted: false })
             .sort({ updatedAt: -1 })
             .then(data => {
                 if (!data || data.length === 0) {
-                    return Promise.reject({ status: 401, message: "No comments found" })
+                    return Promise.reject({ status: 401, message: "No comments found" });
                 }
-                return res.status(201).json(data)
+                return res.status(200).json(data);
             })
             .catch(error => {
-                const err = error.message || "Internal Server error"
-                return res.status(401).json(err)
-            })
-
+                const err = error.message || "Internal Server error";
+                return res.status(401).json({ message: err });
+            });
     }
 
     // [GET] Get all comments having star attribute of a specific book
     getAllCommentsStar(req, res) {
         const bookId = req.query.bookId;
-        Commentary.find({ book: bookId, star: { $exists: true } }) // Filter comments with 'star' attribute
+
+        Commentary.find({ book: bookId, star: { $exists: true }, deleted: false }) // Filter comments with 'star' attribute
             .sort({ createdAt: -1 })
             .then(data => {
                 if (!data || data.length === 0) {
@@ -111,6 +110,23 @@ class CommentaryController {
             .catch(error => {
                 const err = error.message || "Internal Server error";
                 return res.status(500).json({ message: err });
+            });
+    }
+
+    // [DELETE] Delete a comment
+    deleteComment(req, res) {
+        const userId = req.query.userId
+
+        Commentary.findByIdAndUpdate(userId, { deleted: true }, { new: true })
+            .then(updatedComment => {
+                if (!updatedComment) {
+                    return res.status(404).json({ message: 'Comment not found' });
+                }
+                res.status(200).json({ message: 'Comment soft deleted successfully' });
+            })
+            .catch(error => {
+                console.error('Error soft deleting comment:', error);
+                res.status(500).json({ message: 'Server error' });
             });
     }
 

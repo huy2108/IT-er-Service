@@ -7,6 +7,10 @@ route.post('/register', userController.register)
 route.post('/login', userController.login)
 route.get('/verify', verifyToken, userController.verify)
 route.get('/findUser', userController.findUser)
+route.get('/verifyViewUser', verifyToken, userController.verifyViewUser)
+route.get('/findUserViewUser', userController.findUserViewUser)
+route.put('/editUser', userController.editUser)
+route.put('/checkUser', userController.checkUser)
 
 
 

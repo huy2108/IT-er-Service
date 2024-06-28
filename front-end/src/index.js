@@ -4,14 +4,17 @@ import './index.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {StoreProvider as SetNavEleProvider} from './Context/setNavElementsContext'
+import { StoreProvider as SetNavEleProvider } from './Context/setNavElementsContext'
+import { ModalProvider } from './Context/setModalContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <SetNavEleProvider>
-        <App />
+        <ModalProvider>
+          <App />
+        </ModalProvider>
       </SetNavEleProvider>
     </Router>
   </React.StrictMode>

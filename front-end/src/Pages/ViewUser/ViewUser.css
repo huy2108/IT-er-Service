@@ -1,0 +1,186 @@
+.viewUserContainer {
+    min-height: 100vh;
+    background-color: var(--yellow-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* padding-bottom: 100p; */
+}
+
+
+.profile {
+    margin-top: 100px;
+    /* border: 1px solid var(--blue-bright); */
+    height: 65vh;
+    width: 30%;
+    /* margin-top: 150px; */
+    border-radius: 20px;
+    /* box-shadow: 15px 15px 10px black; */
+    box-shadow: 0px 0px 7px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.profile-title {
+    position: relative;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-title img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* justify-self: flex-end; */
+}
+
+.profile-title h2 {
+    font-size: 36px;
+    font-weight: 500;
+
+}
+
+.profile-item {
+    margin-top: 10px;
+}
+
+.profile-item .title {
+    font-weight: 600;
+}
+
+.profile-item div {
+    border: 1px solid black;
+    /* padding-left: 10px; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.profile-item input {
+    height: 100%;
+    width: 100%;
+    background-color: #b6b6b6;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: none;
+}
+
+.profile-item input:focus {
+    outline: none;
+}
+
+.profile-item:last-child p {
+    font-size: 13px;
+    color: var(--blue-bright);
+    cursor: pointer;
+    text-align: end;
+    text-decoration: underline;
+}
+
+.profile-item:last-child p:active {
+    color: var(--blue-navy)
+}
+
+#changePasswordForm {
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 30%;
+    min-height: 20vh;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid var(--blue-bright);
+    background-color: var(--yellow-background);
+}
+
+#changePasswordForm .title {
+    margin-top: 10px;
+}
+
+#changePasswordForm .handleButton {
+    background-color: var(--yellow-background);
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#changePasswordForm .handleButton button {
+    background-color: #4c8cccec;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#changePasswordForm .handleButton button:hover {
+    background-color: #125eaaec;
+}
+
+#changePasswordForm .handleButton button:active {
+    background-color: #002b55dd;
+}
+
+#changePasswordForm input {
+    background-color: white;
+}
+
+#passwordModal,
+#userModal {
+    position: fixed;
+    height: 30px;
+    min-width: 200px;
+    background-color: green;
+    padding: 10px;
+    z-index: 9999;
+    color: white;
+    display: none;
+    align-items: center;
+    top: 120px;
+    right: 0px;
+    transform: translateX(100%);
+    opacity: 0;
+    animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideDownOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
