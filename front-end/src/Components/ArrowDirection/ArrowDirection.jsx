@@ -3,7 +3,7 @@ import './ArrowDirection.css'
 import nextIcon from '../Assets/nextIcon.png'
 import prevIcon from '../Assets/prevIcon.png'
 
-export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex }) => {
+export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex, positionPage }) => {
 
     console.log(length)
 
@@ -11,12 +11,16 @@ export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex }
         if (currentIndex > 0) {
             setCurrentIndex(currentIndex - amount);
         }
+
+        document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
     };
 
     const nextComment = () => {
         if (currentIndex < length - amount) {
             setCurrentIndex(currentIndex + amount);
         }
+
+        document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
     };
 
     return (

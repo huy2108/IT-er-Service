@@ -65,7 +65,7 @@ export const HeroLib = () => {
                 </div>
             </div>
             <div className="library-feature">
-                <h1>LIBRARY</h1>
+                <h1 id='library-title'>LIBRARY</h1>
                 <div className="books-container">
                     <div className="searchbar">
                         <BookSearch allBooks={allBooks} setAllBooks={setAllBooks} />
@@ -88,7 +88,7 @@ export const HeroLib = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className="bookcase">
+                            <div className="bookcase" id='bookcase'>
                                 <h2>{category ? `${category} Books` : 'All Books'}</h2>
                                 {stateBook && allBooks.slice(currentIndex, currentIndex + 6).map(book => (
                                     <Link key={book.name} className="book" to={`${book.slug}`}>
@@ -104,6 +104,7 @@ export const HeroLib = () => {
                                 setCurrentIndex={setCurrentIndex}
                                 currentIndex={currentIndex}
                                 length={allBooks ? allBooks.length : 0}
+                                positionPage='library-title'
                             />
                         </div>
                     </div>
