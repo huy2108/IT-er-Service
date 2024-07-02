@@ -1,4 +1,4 @@
-.Sidebar{
+.Sidebar {
     position: absolute;
     /* border: 1px solid black; */
     background-color: rgb(252, 252, 228);
@@ -11,9 +11,10 @@
     /* border-right: 2px solid #c7c7c7; */
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.242);
 }
-.Sidebar .buttonFunction{
+
+.Sidebar .buttonFunction {
     width: 100%;
-    height: 100%;  
+    height: 100%;
     border-radius: 20px 20px;
     /* border: 1px solid black;  */
     font-size: 18px;
@@ -23,17 +24,12 @@
     cursor: pointer;
 }
 
-.Sidebar .buttonFunction:hover{
+.Sidebar .buttonFunction:hover {
     background-color: #073c71dd;
 }
 
-.Sidebar .buttonFunction:active{
+.Sidebar .buttonFunction:active {
     background-color: #002b55dd;
-}
-
-.Sidebar .link-style:first-child{
-    margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 .Sidebar .link-style {
@@ -43,4 +39,10 @@
     height: 80px;
     /* border: 1px solid black; */
     border-radius: 20px 20px;
+    margin-top: 20px;
+}
+
+.Sidebar .link-style:first-child {
+    margin-top: 50px;
+    /* margin-bottom: 20px; */
 }

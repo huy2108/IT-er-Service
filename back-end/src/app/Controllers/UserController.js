@@ -150,11 +150,12 @@ class UserController {
         return res.status(200).json({ message: 'Authenticated: User verified' })
     }
 
-    // [GET] User verification (View Profile page)
+    // [GET] User verification (View Profile page), Also for QuestionDetail page
     verifyViewUser(req, res) {
-        console.log(req.user)
+        // console.log(req.user)
         return res.status(200).json({ message: 'Authenticated: User verified', user: req.user.userId })
     }
+
 }
 
 module.exports = new UserController;

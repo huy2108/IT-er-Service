@@ -147,7 +147,7 @@ export const BookDetails = () => {
           </div>
         </div>
       </div>
-      <Curtain />
+      <Curtain element='readingFeatureContent' />
       <embed className='bookContent' id='readingFeatureContent' src={book ? book.bookContent : ''} type="application/pdf" />
       <BookChain books={sameGenreBook} amount={5} header='Relating Books' />
       {/* <div className="relatedBookContainer">

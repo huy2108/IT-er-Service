@@ -73,9 +73,7 @@
     border: 1px solid #012140dd;
     width: 80%;
     margin: 0 auto;
-
 }
-
 
 .comment {
     /* border: 1px solid black; */
@@ -83,7 +81,9 @@
     width: 100%;
     margin-top: 5px;
     display: flex;
+    border-radius: 15px;
     flex-direction: column;
+    /* border-radius: ; */
 }
 
 .comment textarea {
@@ -166,8 +166,8 @@
     width: 80%;
     background-color: white;
     padding: 20px;
-    /* border: 1px solid red; */
-    border-radius: 5px;
+    border: 3px solid var(--blue-bright);
+    border-radius: 15px;
 }
 
 .comments .userIcon {

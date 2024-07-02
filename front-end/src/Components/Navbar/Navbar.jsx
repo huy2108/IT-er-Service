@@ -94,9 +94,12 @@ export const Navbar = ({ setIsLoggedIn }) => {
             }, 500); // Match this duration to your CSS animation duration
         } else {
             // Show the menu
+            logoutMenu.current.classList.remove('close');
             setMenuVisible(true);
         }
     };
+
+    console.log(logoutMenu.current)
 
     const stopPropagation = (e) => {
         e.stopPropagation();

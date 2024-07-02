@@ -12,7 +12,9 @@ export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex, 
             setCurrentIndex(currentIndex - amount);
         }
 
-        document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
+        if (positionPage) {
+            document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     const nextComment = () => {
@@ -20,7 +22,9 @@ export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex, 
             setCurrentIndex(currentIndex + amount);
         }
 
-        document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
+        if (positionPage) {
+            document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     return (

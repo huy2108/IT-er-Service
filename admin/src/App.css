@@ -1,6 +1,7 @@
-.App{
+.App {
   /* overflow: hidden; */
-  height: 130vh;
+  min-height: 130vh;
   background-color: rgb(247, 247, 194);
   position: relative;
+  padding-bottom: 50px;
 }

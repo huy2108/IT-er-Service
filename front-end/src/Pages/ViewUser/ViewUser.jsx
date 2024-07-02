@@ -185,7 +185,7 @@ export const ViewUser = () => {
             <p id='passwordModal'>Change password successfully!</p>
             <p id='userModal'>Update infomation successfully!</p>
             <div className='viewUserContainer'>
-                <Curtain />
+                <Curtain element='changePasswordForm' />
                 <form onSubmit={handleClickPassword} className="profile-item" id='changePasswordForm'>
                     <p className='title'>Enter your existing password</p>
                     <div>

@@ -3,31 +3,25 @@ import xIcon from '../../Components/Assets/x_icon.png'
 import { actions } from '../../Context/setModalContext'
 import { ModalContext } from '../../Context/setModalContext';
 
-export const Curtain = () => {
+export const Curtain = ({ element }) => {
 
     const [state, dispatch] = useContext(ModalContext)
 
     const handleRemoveCurtain = () => {
         const curtain = document.getElementById('readingFeatureCurtain')
-        const bookContent = document.getElementById('readingFeatureContent')
         const editForm = document.getElementById('editForm')
-        const changePasswordForm = document.getElementById('changePasswordForm')
-
-        if (curtain && bookContent) {
-            curtain.style.display = 'none'
-            bookContent.style.display = 'none'
-        }
+        const item = document.getElementById(element)
 
         if (curtain && editForm) {
-            curtain.style.display = 'none'
             editForm.style.display = 'none'
             dispatch(actions.setModal(false))
         }
 
-        if (curtain && changePasswordForm) {
-            curtain.style.display = 'none'
-            changePasswordForm.style.display = 'none'
+        if (curtain && item) {
+            item.style.display = 'none'
         }
+
+        curtain.style.display = 'none'
     }
 
     function handleKeyDown(event) {

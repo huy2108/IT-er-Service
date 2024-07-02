@@ -3,7 +3,7 @@ import { Navbar } from './Components/Navbar/Navbar';
 import { Footer } from './Components/Footer/Footer';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Home } from './Pages/Home'
-import { Forum } from './Pages/Forum'
+import { Forum } from './Pages/Forum/Forum'
 import { Library } from './Pages/Library'
 import { LoginSignup } from './Pages/LoginSignup/LoginSignup'
 import { BooksForSale } from './Pages/BooksForSale'
@@ -12,8 +12,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { LoadingPage } from './Components/LoadingPage/LoadingPage';
 import { BookDetails } from './Pages/BookDetails/BookDetails';
-import { EditUser } from './Pages/EditUser';
 import { ViewUser } from './Pages/ViewUser/ViewUser';
+import { QuestionDetail } from './Pages/QuestionDetail/QuestionDetail';
 
 
 
@@ -59,10 +59,10 @@ function App() {
                 <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
                 <Route path="/forum" element={isLoggedIn ? <Forum /> : <Navigate to="/login" />} />
                 <Route path="/books/for-sales" element={isLoggedIn ? <BooksForSale /> : <Navigate to="/login" />} />
-                <Route path="/edit-user" element={isLoggedIn ? <EditUser /> : <Navigate to="/login" />} />
                 <Route path="/view-user" element={isLoggedIn ? <ViewUser /> : <Navigate to="/login" />} />
                 <Route path="/books/library" element={isLoggedIn ? <Library /> : <Navigate to="/login" />} />
                 <Route path="/books/library/:slug" element={isLoggedIn ? <BookDetails /> : <Navigate to="/login" />} />
+                <Route path="/forum/:slug" element={isLoggedIn ? <QuestionDetail /> : <Navigate to="/login" />} />
               </DefaultLayout>
             }
           />

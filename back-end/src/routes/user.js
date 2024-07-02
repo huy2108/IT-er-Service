@@ -11,6 +11,7 @@ route.get('/verifyViewUser', verifyToken, userController.verifyViewUser)
 route.get('/findUserViewUser', userController.findUserViewUser)
 route.put('/editUser', userController.editUser)
 route.put('/checkUser', userController.checkUser)
+route.get('/verifyQuestionUser', verifyToken, userController.verifyViewUser)
 
 
 
