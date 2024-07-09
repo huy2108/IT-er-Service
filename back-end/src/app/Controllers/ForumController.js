@@ -165,6 +165,29 @@ class ForumController {
             })
     }
 
+
+    // [GET] Get all approved questions by user
+    getAllQuestionsApprovedByUser(req, res) {
+
+        const { user } = req.query
+
+        PostForum.find({ status: 'accepted', user })
+            .sort({ createdAt: -1 })
+            .then(questions => {
+                if (!questions) {
+                    return Promise.reject({ status: 400, message: 'No questions found' })
+                }
+
+                return res.status(200).json(questions)
+            })
+            .catch(err => {
+                const errorStatus = err.status || 500
+                const errorMessage = err.message || 'Internal Server Error'
+
+                return res.status(errorStatus).json(errorMessage)
+            })
+    }
+
     // [PATCH] Approve or Disprove the questions
     approveDisprove(req, res) {
         const { id, status } = req.body

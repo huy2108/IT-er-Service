@@ -1,0 +1,78 @@
+.userManagementContainer {
+    position: relative;
+    /* z-index: -1; */
+    right: 10px;
+    min-height: 100vh;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 80%;
+    border: 2px solid #007bff;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userManagementContainer h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.managePanel {
+    min-height: 100vh;
+    border: 1px solid gray;
+    width: 80vh;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    /* background-color: black; */
+}
+
+.userContainer {
+    margin-top: 10px;
+    min-height: 80px;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 123);
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.userContainer .userAvatar {
+    border: 1px solid #007bff;
+    font-size: 20px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.userContainer .name {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.userManagementButton {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.userManagementButton img {
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}

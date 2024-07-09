@@ -2,7 +2,10 @@ import React, { useState, useRef, useEffect } from 'react'
 import './Forum.css'
 import { Curtain } from '../../Components/Curtain/Curtain'
 import axios from 'axios'
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { ArrowDirection } from '../../Components/ArrowDirection/ArrowDirection';
+import { useInView } from 'react-intersection-observer';
 
 export const Forum = () => {
 
@@ -11,31 +14,43 @@ export const Forum = () => {
   const forumContentRef = useRef(null)
   const [userId, setUserId] = useState()
   const [approvedQuestions, setApprovedQuestions] = useState()
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [approvedQuestionsComprehensive, setApprovedQuestionsComprehensive] = useState()
 
-  const navigate = useNavigate()
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.01,
+  })
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
 
   useEffect(() => {
 
     if (approvedQuestions) {
 
-      approvedQuestions.forEach(question => {
-
-        axios.get('http://localhost:4000/api/findUser', {
+      const promises = approvedQuestions.map(question => {
+        return axios.get('http://localhost:4000/api/findUser', {
           params: {
             id: question.user
           }
         })
-          .then(res => {
-            // console.log(res.data)
-            const name = res.data
-            question.name = name
-            setApprovedQuestions(approvedQuestions)
-          })
+          .then(res => ({ ...question, name: res.data }))
           .catch(err => {
-            console.log(err)
-          })
+            console.log(err);
+            return question; // Return the original question if there's an error
+          });
+      });
 
-      })
+      Promise.all(promises)
+        .then(updatedQuestions => {
+          setApprovedQuestionsComprehensive(updatedQuestions);
+        })
+        .catch(err => {
+          console.error('Error in fetching user names:', err);
+        });
     }
 
   }, [approvedQuestions])
@@ -44,14 +59,6 @@ export const Forum = () => {
 
   useEffect(() => {
     const token = localStorage.getItem('token')
-
-    axios.get('http://localhost:4000/forum/getAllQuestionsApproved')
-      .then(res => {
-        setApprovedQuestions(res.data)
-      })
-      .catch(err => {
-        console.log(err)
-      })
 
     if (token) {
       axios.get('http://localhost:4000/forum/verify', { headers: { Authorization: `Bearer ${token}` } })
@@ -63,6 +70,14 @@ export const Forum = () => {
           console.log(err)
         })
     }
+
+    axios.get('http://localhost:4000/forum/getAllQuestionsApproved')
+      .then(res => {
+        setApprovedQuestions(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }, [])
 
 
@@ -136,30 +151,48 @@ export const Forum = () => {
             DATE
           </p>
         </div>
-        {approvedQuestions &&
-          approvedQuestions.map((question, index) => {
+        {approvedQuestionsComprehensive &&
+          approvedQuestionsComprehensive.slice(currentIndex, currentIndex + 5).map((question, index) => {
             return (
-              <Link to={`/forum/${question.slug}`} key={index} className='question forumTableTitle'>
-                <p className='forumTableContentItem forumTableTitleItem item1'>
-                  {question.title}
-                </p>
-                <p className='forumTableContentItem forumTableTitleItem '>
-                  {question.name &&
-                    question.name.lastname + ' ' + question.name.firstname
-                  }
-                </p>
-                <p className='forumTableContentItem forumTableTitleItem item2'>{question.comments.length}</p>
-                <p className='forumTableContentItem forumTableTitleItem '>
-                  {new Date(question.createdAt).toLocaleDateString('en-GB', {
-                    day: '2-digit',
-                    month: '2-digit',
-                    year: 'numeric',
-                  })}
-                </p>
-              </Link>
+
+              <motion.div
+                key={index}
+                ref={ref}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                variants={containerVariants}// Animation duration
+                className='motionQuestion'
+              >
+                <Link to={`/forum/${question.slug}`} key={index} className='question forumTableTitle'>
+                  <p className='forumTableContentItem forumTableTitleItem item1'>
+                    {question.title}
+                  </p>
+                  <p className='forumTableContentItem forumTableTitleItem item2'>
+                    {question.name &&
+                      question.name.lastname + ' ' + question.name.firstname
+                    }
+                  </p>
+                  <p className='forumTableContentItem forumTableTitleItem item2'>{question.comments.length}</p>
+                  <p className='forumTableContentItem forumTableTitleItem item2'>
+                    {new Date(question.createdAt).toLocaleDateString('en-GB', {
+                      day: '2-digit',
+                      month: '2-digit',
+                      year: 'numeric',
+                    })}
+                  </p>
+                </Link>
+              </motion.div>
             )
           })
         }
+        <div className="forumArrow">
+          <ArrowDirection
+            length={approvedQuestions ? approvedQuestions.length : []}
+            amount={5}
+            setCurrentIndex={setCurrentIndex}
+            currentIndex={currentIndex}
+          />
+        </div>
       </div>
 
       <div onClick={handleCurtainForum} className='addQuestionIcon'>
@@ -181,6 +214,6 @@ export const Forum = () => {
           <button>SUBMIT</button>
         </div>
       </form>
-    </div>
+    </div >
   )
 }

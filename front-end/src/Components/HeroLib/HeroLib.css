@@ -1,3 +1,7 @@
+.libraryContainer {
+    overflow: hidden;
+}
+
 .hero-image {
     position: relative;
     /* margin-top: 110px; */
@@ -140,7 +144,7 @@
 .categories {
     border: 1px solid var(--blue-bright);
     flex: 0.23;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: white;
     /* margin-top: 30px; */
     border-radius: 10px;
@@ -156,14 +160,14 @@
     background-color: white;
     border-radius: 10px;
     flex: 0.50;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* height: 80vh; */
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
     /* align-items: flex-start; */
     /* margin-bottom: 10px; */
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .bookcase .book {
@@ -174,7 +178,7 @@
     /* display: inline-block; */
     height: 240px;
     /* width: 100px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 0 0 calc(33.33% - 60px);
     transition: transform 0.3s ease;
     background-color: white;
@@ -187,6 +191,11 @@
 .book img {
     height: 100%;
     width: 100%;
+}
+
+.book-list {
+    height: 100%;
+    /* border: 1px solid black; */
 }
 
 .book p {
@@ -222,11 +231,85 @@
 
 }
 
+.bookcase .seeAllBooksFunction {
+    position: absolute;
+    right: 10px;
+    color: var(--blue-bright);
+    top: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.bookcase .seeAllBooksFunction:active {
+    color: var(--blue-navy);
+}
+
 .bookcase h2 {
     position: absolute;
     /* border: 1px solid black; */
     margin-left: 30px;
     font-weight: 500;
     font-size: 30px;
+    margin-top: 10px;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    padding-left: 40px;
+}
+
+/* Create a custom checkbox using ::before pseudo-element */
+.custom-checkbox label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--blue-bright);
+    border-radius: 4px;
+    background-color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Style the checkmark */
+.custom-checkbox input[type="checkbox"]:checked+label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+
+}
+
+/* Checkmark pseudo-element */
+.custom-checkbox label::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 40%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked+label::after {
+    opacity: 1;
+}
+
+.custom-checkbox {
     margin-top: 10px;
 }

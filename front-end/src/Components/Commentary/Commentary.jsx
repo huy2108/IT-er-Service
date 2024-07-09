@@ -22,6 +22,8 @@ export const Commentary = (props) => {
   const [name, setName] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // console.log(name)
+
   useEffect(() => {
 
     if (props.book) {
@@ -58,6 +60,9 @@ export const Commentary = (props) => {
         })
         .catch(err => {
           console.log(err)
+          setAllComments([])
+          setState(true)
+          // setContent('')
         })
 
 
@@ -86,7 +91,7 @@ export const Commentary = (props) => {
 
   }, [editState])
 
-  console.log(user)
+  // console.log(props.book)
   // console.log(name)
 
   useEffect(() => {
@@ -115,8 +120,12 @@ export const Commentary = (props) => {
         })
         .catch(err => {
           console.log(err)
+          setState(true)
+          setContent('')
+          setRating(0)
+          setChoseRating(0)
         })
-
+      setCurrentIndex(0)
     }
 
   }, [props.book])
@@ -134,6 +143,8 @@ export const Commentary = (props) => {
         })
         .catch(err => {
           console.log(err)
+          setAllComments([])
+          setState(true)
         })
 
 
@@ -149,6 +160,9 @@ export const Commentary = (props) => {
         })
         .catch(err => {
           console.log(err)
+          setLength(0)
+          calculateAverageRating();
+          calculateStar()
         })
     }
   }, [props.book])
@@ -171,6 +185,9 @@ export const Commentary = (props) => {
         })
         .catch(err => {
           console.log(err)
+          setLength(0)
+          calculateAverageRating([]);
+          calculateStar([])
         })
 
 
@@ -179,25 +196,31 @@ export const Commentary = (props) => {
 
   const calculateSetName = data => {
 
-    var newName = data;
-    // console.log(newName)
+    if (data && data.length > 0) {
 
-    newName.forEach(object => {
-      axios.get('http://localhost:4000/api/findUser', {
-        params: {
-          id: object.commenter
-        }
+      var newName = data;
+      // console.log(newName)
+
+      newName.forEach(object => {
+        axios.get('http://localhost:4000/api/findUser', {
+          params: {
+            id: object.commenter
+          }
+        })
+          .then(res => {
+            // newName.push(res.data)
+            object.fullname = res.data
+            setName(newName)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+
       })
-        .then(res => {
-          // newName.push(res.data)
-          object.fullname = res.data
-          setName(newName)
-        })
-        .catch(err => {
-          console.log(err)
-        })
+    } else {
+      setName([])
+    }
 
-    })
 
   }
 
@@ -242,7 +265,7 @@ export const Commentary = (props) => {
   // console.log(allComments)
 
   const calculateStar = (data) => {
-    if (data) {
+    if (data && data.length > 0) {
       const length = data.length;
       const newRatings = []; // Initialize a new array to store ratings
 
@@ -267,7 +290,7 @@ export const Commentary = (props) => {
 
 
   const calculateAverageRating = (comments) => {
-    if (comments) {
+    if (comments && comments.length > 0) {
       const totalStars = comments.reduce((acc, comment) => {
         if (comment.star) {
           return acc + comment.star;
@@ -284,53 +307,6 @@ export const Commentary = (props) => {
     }
   };
 
-  // const handleStarHover = (index) => {
-  //   setRating(index + 1);
-  // };
-
-  // const handleStarClick = (index) => {
-  //   // Set rating in state or send to server
-  //   setChoseRating(index + 1)
-  // };
-
-  // const handleMouseOut = () => {
-  //   setRating(choseRating)
-  // }
-
-  // const handleCommentary = (e) => {
-  //   e.preventDefault()
-  //   const token = localStorage.getItem('token')
-  //   var user;
-  //   const book = props.book._id
-
-  //   if (token) {
-
-  //     axios.get('http://localhost:4000/commentary/verify', { headers: { Authorization: `Bearer ${token}` } })
-  //       .then(res => {
-  //         user = res.data.user.userId
-  //         if (choseRating !== 0) {
-  //           return axios.post('http://localhost:4000/commentary/add', { commenter: user, book, content, star: choseRating })
-  //         } else {
-  //           return axios.post('http://localhost:4000/commentary/add', { commenter: user, book, content })
-  //         }
-  //       })
-  //       .then(res => {
-  //         // console.log(res.data)
-  //         const newComment = res.data
-  //         setChoseRating(0)
-  //         setContent("")
-  //         setAllComments(prevComments => [newComment, ...prevComments])
-
-  //         setState(false)
-
-  //       })
-  //       .catch(err => {
-  //         console.log(err)
-  //         alert(err.response.data.message)
-  //       })
-
-  //   }
-  // }
 
   const handleEditReview = () => {
     const curtain = document.getElementById('readingFeatureCurtain')
@@ -354,6 +330,7 @@ export const Commentary = (props) => {
     }
 
     setUser(data)
+    setCurrentIndex(0)
   }
 
   const handleEditForm = (e) => {
@@ -440,28 +417,7 @@ export const Commentary = (props) => {
             choseRating={choseRating}
             adjust="margin-bottom"
           />
-          // <form onSubmit={handleCommentary} className="commentForm">
 
-          //   <div className="star-rating" id='star-rating'>
-          //     {[...Array(5)].map((_, index) => (
-          //       <span
-          //         key={index}
-          //         className={index < rating ? 'star active' : 'star'}
-          //         onMouseOver={() => handleStarHover(index)}
-          //         onMouseOut={handleMouseOut}
-          //         onClick={() => handleStarClick(index)}
-          //       >
-          //         &#9733;
-          //       </span>
-          //     ))}
-          //   </div>
-
-          //   <div className="comment">
-          //     <textarea value={content} onChange={(e) => setContent(e.target.value)} name="commentContent" id="commentContent" required />
-          //     <button id='commentButton'>Save</button>
-
-          //   </div>
-          // </form>
         }
         {!state &&
           <div className='commentForm'>
@@ -471,13 +427,13 @@ export const Commentary = (props) => {
           </div>
         }
         <ArrowDirection
-          amount={1}
+          amount={5}
           setCurrentIndex={setCurrentIndex}
           length={name ? name.length : 0}
           currentIndex={currentIndex}
         />
         <div className="comments">
-          {name.slice(currentIndex, currentIndex + 1).map((comment, index) => {
+          {name.slice(currentIndex, currentIndex + 5).map((comment, index) => {
             return (
               <div key={index} className='userComment'>
                 <div className="userCommentChild">

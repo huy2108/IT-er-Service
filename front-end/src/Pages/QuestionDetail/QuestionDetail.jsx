@@ -6,6 +6,9 @@ import like from '../../Components/Assets/like.png'
 import likeBlue from '../../Components/Assets/likeBlue.png'
 import commentIcon from '../../Components/Assets/comment.png'
 import send from '../../Components/Assets/send.png'
+import { ArrowDirection } from '../../Components/ArrowDirection/ArrowDirection';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 export const QuestionDetail = () => {
@@ -14,7 +17,7 @@ export const QuestionDetail = () => {
     const [question, setQuestion] = useState()
     const likeRef = useRef(null)
     const [user, setUser] = useState()
-    const likeIconRef = useRef(null)
+    const likeIconRef = useRef()
     const [postUser, setPostUser] = useState()
     const [hasLiked, setHasLiked] = useState(false)
     const [commentToggle, setCommentToggle] = useState(false)
@@ -22,8 +25,17 @@ export const QuestionDetail = () => {
     const [allComments, setAllComments] = useState()
     const [state, setState] = useState()
     const [allCommentsComprehensive, setAllCommentsComprehensive] = useState()
-    const likeRefComment = useRef(null)
-    const likeIconRefComment = useRef(null)
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const { ref, inView } = useInView({
+        triggerOnce: true, // Trigger animation only once
+        threshold: 0.1,
+    })
+
+    const containerVariants = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
 
     useEffect(() => {
 
@@ -66,6 +78,20 @@ export const QuestionDetail = () => {
             behavior: 'smooth' // Optional: Adds smooth scrolling
         });
     }, []);
+
+    useEffect(() => {
+        axios.get('http://localhost:4000/forum/getAQuestion', {
+            params: {
+                slug
+            }
+        })
+            .then(res => {
+                setQuestion(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [state])
 
     useEffect(() => {
 
@@ -162,7 +188,7 @@ export const QuestionDetail = () => {
     }, [allComments]);
 
 
-    console.log(allCommentsComprehensive)
+    // console.log(allCommentsComprehensive)
 
     const handleLikeFunction = () => {
         // Toggle like functionality
@@ -174,11 +200,13 @@ export const QuestionDetail = () => {
                 )
                 .then(res => {
                     likeRef.current.style.color = 'var(--blue-bright)';
-                    likeIconRef.current.src = likeBlue;
-                    likeIconRef.current.style.animation = 'likeAnimation 3s ease';
-                    setTimeout(() => {
-                        likeIconRef.current.style.animation = 'none';
-                    }, 1000);
+                    if (likeIconRef !== null) {
+                        likeIconRef.current.src = likeBlue;
+                        likeIconRef.current.style.animation = 'likeAnimation 3s ease';
+                        setTimeout(() => {
+                            likeIconRef.current.style.animation = 'none';
+                        }, 1000);
+                    }
                     setHasLiked(true);
 
                 })
@@ -290,7 +318,7 @@ export const QuestionDetail = () => {
                             }
 
                         </div>
-                        <p style={{ textDecoration: 'underline', fontStyle: 'italic', marginTop: '10px' }}>Question:</p>
+                        <p style={{ textDecoration: 'underline', fontStyle: 'italic', marginTop: '10px', fontSize: '16px' }}>Question:</p>
                         <p className="questionDetailContent">{question.content}</p>
                         <div className="questionJudgement">
                             <div onClick={handleLikeFunction} className="likeFunction">
@@ -321,58 +349,75 @@ export const QuestionDetail = () => {
                         }
                         <div className="userCommentsContainer">
                             {allCommentsComprehensive &&
-                                allCommentsComprehensive.map(comment => (
-                                    <div className="userCommentsSpecific">
-                                        <div key={comment._id} className="userComments">
-                                            <div className='avatarUser avatarCommentUser'>
-                                                {comment && comment.name &&
-                                                    <>
-                                                        <p className="avatarName">{comment.name.lastname.charAt(0) + comment.name.firstname.charAt(0)}</p>
-                                                        <p>{comment.name.lastname + ' ' + comment.name.firstname}</p>
-                                                    </>
-                                                }
-                                            </div>
-                                            <p className="commentContent">
-                                                {comment && comment.content}
-                                            </p>
-                                            <p className='commentDate'>
-                                                {comment &&
-                                                    new Date(comment.createdAt).toLocaleDateString('en-GB', {
-                                                        day: '2-digit',
-                                                        month: '2-digit',
-                                                        year: 'numeric',
-                                                        hour: '2-digit',
-                                                        minute: '2-digit',
-                                                        second: '2-digit',
-                                                    })
-                                                }
-                                            </p>
-                                        </div>
-                                        <div className="userCommentsFunctions">
-                                            <div className="questionJudgement commentQuestionJudgement">
-                                                <div onClick={() => handleLikeFunctionComment(comment)} className="likeFunction commentLikeFunction">
-                                                    <img
-                                                        // ref={likeIconRef}
-                                                        src={comment.likes.includes(user._id) ? likeBlue : like}
-                                                        alt=''
-                                                    />
-                                                    <p
-                                                        // ref={likeRef}
-                                                        style={{
-                                                            color: comment.likes.includes(user._id) ? 'var(--blue-bright)' : 'grey'
-                                                        }}
-                                                    >
-                                                        Like {comment && comment.likes.length}
-                                                    </p>
+                                allCommentsComprehensive.slice(currentIndex, currentIndex + 5).map((comment, index) => (
+                                    <motion.div
+                                        key={index}
+                                        ref={ref}
+                                        initial="hidden"
+                                        animate={inView ? "visible" : "hidden"}
+                                        variants={containerVariants}// Animation duration
+                                    >
+                                        <div className="userCommentsSpecific">
+                                            <div key={comment._id} className="userComments">
+                                                <div className='avatarUser avatarCommentUser'>
+                                                    {comment && comment.name &&
+                                                        <>
+                                                            <p className="avatarName">{comment.name.lastname.charAt(0) + comment.name.firstname.charAt(0)}</p>
+                                                            <p>{comment.name.lastname + ' ' + comment.name.firstname}</p>
+                                                        </>
+                                                    }
                                                 </div>
-                                                {/* <div onClick={handleToggleComment} className="likeFunction commentFunction">
+                                                <p className="commentContent">
+                                                    {comment && comment.content}
+                                                </p>
+                                                <p className='commentDate'>
+                                                    {comment &&
+                                                        new Date(comment.createdAt).toLocaleDateString('en-GB', {
+                                                            day: '2-digit',
+                                                            month: '2-digit',
+                                                            year: 'numeric',
+                                                            hour: '2-digit',
+                                                            minute: '2-digit',
+                                                            second: '2-digit',
+                                                        })
+                                                    }
+                                                </p>
+                                            </div>
+                                            <div className="userCommentsFunctions">
+                                                <div className="questionJudgement commentQuestionJudgement">
+                                                    <div onClick={() => handleLikeFunctionComment(comment)} className="likeFunction commentLikeFunction">
+                                                        <img
+                                                            // ref={likeIconRef}
+                                                            src={comment.likes.includes(user._id) ? likeBlue : like}
+                                                            alt=''
+                                                        />
+                                                        <p
+                                                            // ref={likeRef}
+                                                            style={{
+                                                                color: comment.likes.includes(user._id) ? 'var(--blue-bright)' : 'grey'
+                                                            }}
+                                                        >
+                                                            Like {comment && comment.likes.length}
+                                                        </p>
+                                                    </div>
+                                                    {/* <div onClick={handleToggleComment} className="likeFunction commentFunction">
                                                     <img src={commentIcon} alt="" />
                                                     <p>Comment</p>
                                                 </div> */}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))}
+
+                        </div>
+                        <div className="questionDetailsArrow">
+                            <ArrowDirection
+                                length={allCommentsComprehensive ? allCommentsComprehensive.length : 0}
+                                amount={5}
+                                setCurrentIndex={setCurrentIndex}
+                                currentIndex={currentIndex}
+                            />
                         </div>
 
                     </div>

@@ -45,15 +45,25 @@
 }
 
 .forumTable {
-    min-height: 500px;
-    /* border: 1px solid var(--blue-navy); */
+    min-height: 200px;
+    border: 1px solid var(--blue-navy);
     border-radius: 15px;
     width: 80%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 80px;
+    /* padding-bottom: 50px; */
 
+}
+
+.forumArrow {
+    height: 50px;
+    /* width: 200px; */
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .addQuestionIcon {
@@ -204,6 +214,7 @@
     text-decoration: none;
 }
 
+
 .forumTableContentItem {
     color: black;
     /* height: 100%; */
@@ -217,11 +228,10 @@
 
 .item1 {
     padding: 20px;
-    /* border: 1px solid black; */
+    /* border: 1px solid ; */
     font-weight: 600;
 }
 
 .item2 {
     border-left: 1px solid var(--blue-bright);
-    border-right: 1px solid var(--blue-bright);
 }

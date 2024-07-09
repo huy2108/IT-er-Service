@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { StoreContext } from "../../Context/setNavElementsContext";
 import { actions } from '../../Context/setNavElementsContext';
 import { useLocation } from 'react-router-dom';
+import xSymbol from '../Assets/xSymbol.png'
 
 export const Navbar = ({ setIsLoggedIn }) => {
     const [state, dispatch] = useContext(StoreContext);
@@ -46,7 +47,7 @@ export const Navbar = ({ setIsLoggedIn }) => {
     useEffect(() => {
         if (location.pathname === '/') {
             dispatch(actions.setElement("HOME"));
-        } else if (location.pathname.includes('/books/library') || location.pathname === '/books/for-sales') {
+        } else if (location.pathname.includes('/books/library')) {
             dispatch(actions.setElement("BOOKS"));
         } else if (location.pathname === '/forum') {
             dispatch(actions.setElement("FORUM"));
@@ -122,18 +123,8 @@ export const Navbar = ({ setIsLoggedIn }) => {
                         {state === 'HOME' && <hr />}
                     </li>
                     <li className='nav-elements'>
-                        <p>BOOKS</p>
+                        <Link className="link-style" to='/books/library'><p>BOOKS</p></Link>
                         {state === 'BOOKS' && <hr />}
-                        <div className='books-section'>
-                            <ul>
-                                <li onClick={() => handleClick('BOOKS')}>
-                                    <Link className="link-style" to='/books/library'><p>LIBRARY</p></Link>
-                                </li>
-                                <li onClick={() => handleClick('BOOKS')}>
-                                    <Link className="link-style" to='/books/for-sales'><p>BOOKS FOR SALE</p></Link>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
                     <li className='nav-elements' onClick={() => handleClick('FORUM')}>
                         <Link className="link-style" to='/forum'><p>FORUM</p></Link>
@@ -149,6 +140,9 @@ export const Navbar = ({ setIsLoggedIn }) => {
                             <Link className='link-style' to='view-user'><p onClick={handleOnClickLogOut}>View Profile</p></Link>
                         </li>
                         <li className="logout-items">
+                            <Link className='link-style' to='your-concern'><p onClick={handleOnClickLogOut}>Your Concern</p></Link>
+                        </li>
+                        <li className="logout-items">
                             <button onClick={handleLogout}><p>LOG OUT</p></button>
                         </li>
                     </ul>
@@ -156,7 +150,7 @@ export const Navbar = ({ setIsLoggedIn }) => {
 
             </div>
             <ul className={`hamburger-dashboard ${navMenuVisible ? 'open' : ''}`}>
-
+                <img onClick={() => { setNavMenuVisible(!navMenuVisible) }} src={xSymbol} alt="" />
             </ul>
         </>
     );

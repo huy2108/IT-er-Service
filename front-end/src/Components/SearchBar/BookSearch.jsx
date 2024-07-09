@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
 import './BookSearch.css';  // Import the CSS file
 
-const BookSearch = ({ allBooks, setAllBooks }) => {
+const BookSearch = ({ allBooks, setAllBooks, setCategory }) => {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [books, setBooks] = useState([]);
@@ -47,6 +47,7 @@ const BookSearch = ({ allBooks, setAllBooks }) => {
 
     const handleSeeABook = book => {
         setAllBooks([book])
+        setQuery('')
     }
 
     const handleXSearch = () => {
@@ -65,9 +66,6 @@ const BookSearch = ({ allBooks, setAllBooks }) => {
             <div onClick={handleXSearch} className="xSearch"></div>
             {query !== '' &&
                 <ul className="book-search-results">
-                    {allBooks && allBooks.length === 1 &&
-                        <div onClick={handleSeeAll} className='see-all-books'>-- SEE ALL BOOKS --</div>
-                    }
                     {results.map((book, index) => (
                         <li onClick={() => handleSeeABook(book)} key={index}>{book.name}</li>
                     ))}

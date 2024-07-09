@@ -13,6 +13,7 @@ route.post('/addLike', forumController.addLike)
 route.post('/checkLike', forumController.checkLike)
 route.post('/removeLike', forumController.removeLike)
 route.get('/getAllComments', forumController.getAllComments)
+route.get('/getAllQuestionsApprovedByUser', forumController.getAllQuestionsApprovedByUser)
 
 
 module.exports = route;

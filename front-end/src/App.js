@@ -14,6 +14,7 @@ import { LoadingPage } from './Components/LoadingPage/LoadingPage';
 import { BookDetails } from './Pages/BookDetails/BookDetails';
 import { ViewUser } from './Pages/ViewUser/ViewUser';
 import { QuestionDetail } from './Pages/QuestionDetail/QuestionDetail';
+import { YourConcern } from './Pages/YourConcern/YourConcern';
 
 
 
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/books/library" element={isLoggedIn ? <Library /> : <Navigate to="/login" />} />
                 <Route path="/books/library/:slug" element={isLoggedIn ? <BookDetails /> : <Navigate to="/login" />} />
                 <Route path="/forum/:slug" element={isLoggedIn ? <QuestionDetail /> : <Navigate to="/login" />} />
+                <Route path="/your-concern" element={isLoggedIn ? <YourConcern /> : <Navigate to="/login" />} />
               </DefaultLayout>
             }
           />

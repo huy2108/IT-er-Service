@@ -5,7 +5,7 @@ import prevIcon from '../Assets/prevIcon.png'
 
 export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex, positionPage }) => {
 
-    console.log(length)
+    // console.log(length)
 
     const prevComment = () => {
         if (currentIndex > 0) {
@@ -26,6 +26,8 @@ export const ArrowDirection = ({ length, amount, setCurrentIndex, currentIndex, 
             document.getElementById(positionPage).scrollIntoView({ behavior: "smooth" });
         }
     };
+
+    console.log(currentIndex)
 
     return (
         <div className="commentDirection">

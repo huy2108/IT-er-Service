@@ -101,18 +101,6 @@ export const BookDetails = () => {
     }
   };
 
-  // const prevBook = () => {
-  //   if (currentIndex > 0) {
-  //     setCurrentIndex(currentIndex - 1);
-  //   }
-  // };
-
-  // const nextBook = () => {
-  //   if (currentIndex < allBooks.length - 5) {
-  //     setCurrentIndex(currentIndex + 1);
-  //   }
-  // };
-
 
   return (
     <div className='backgroundLib'>
@@ -150,22 +138,9 @@ export const BookDetails = () => {
       <Curtain element='readingFeatureContent' />
       <embed className='bookContent' id='readingFeatureContent' src={book ? book.bookContent : ''} type="application/pdf" />
       <BookChain books={sameGenreBook} amount={5} header='Relating Books' />
-      {/* <div className="relatedBookContainer">
-        <h1>Relating Books</h1>
-        <div className="relatingBooks">
-          <div className='carousel'>
-            {allBooks ? allBooks.slice(currentIndex, currentIndex + 5).map((book, index) => (
-              <Link key={index} className='book' to={`/books/library/${book.slug}`} >
-                <img src={book.bookCover} alt="" />
-                <p>{book.name}</p>
-              </Link>
-            )) : ''}
-          </div>
-          <Icon.ChevronLeft size={48} onClick={prevBook} className='prev' />
-          <Icon.ChevronRight onClick={nextBook} className='next' size={48} />
-        </div>
-      </div> */}
+
       <Commentary book={book} />
+
       <BookChain books={allBooks} amount={5} header='Other Books' />
     </div>
   )

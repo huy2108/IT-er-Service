@@ -23,7 +23,7 @@ export const Footer = () => {
       behavior: 'smooth'
     });
 
-    dispatch(actions.setElement(value))
+    // dispatch(actions.setElement(value))
   }
 
 
@@ -49,7 +49,7 @@ export const Footer = () => {
           <h2>Useful Link</h2>
           <ul className="useful-link">
             <li><Link onClick={() => updateNavElements('HOME')} className="link-style-footer" to='/'>Home</Link></li>
-            <li><Link onClick={() => updateNavElements('BOOKS')} className="link-style-footer" to='/books/library'>Library</Link></li>
+            <li><Link onClick={() => updateNavElements('BOOKS')} className="link-style-footer" to='/books/library'>Books</Link></li>
             <li><Link onClick={() => updateNavElements('FORUM')} className="link-style-footer" to='/forum'>Forum</Link></li>
             <li><Link onClick={() => updateNavElements('')} className="link-style-footer" to='/view-user'>View Profile</Link></li>
           </ul>

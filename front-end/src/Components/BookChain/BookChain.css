@@ -82,3 +82,20 @@
     font-size: 14px;
     /* margin-bottom: 500px; */
 }
+
+
+.slide-in {
+    transform: translateX(-100%);
+    /* Initial position outside view */
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Transition for sliding and fading in */
+}
+
+.slide-out {
+    transform: translateX(100%);
+    /* Slide out to the right */
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Transition for sliding and fading out */
+}

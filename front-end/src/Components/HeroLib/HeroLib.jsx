@@ -4,6 +4,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookSearch from '../SearchBar/BookSearch';
 import { ArrowDirection } from '../ArrowDirection/ArrowDirection';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export const HeroLib = () => {
     const [allBooks, setAllBooks] = useState([]);
@@ -12,6 +14,28 @@ export const HeroLib = () => {
     const [stateGenre, setStateGenre] = useState(false);
     const [category, setCategory] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [state, setState] = useState(true)
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const containerVariants = {
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    };
+
+    useEffect(() => {
+        axios.get('http://localhost:4000/book/allbooks')
+            .then(res => {
+                setAllBooks(res.data)
+                setCurrentIndex(0)
+            })
+            .finally(() => {
+                setCategory('')
+            })
+    }, [state])
 
     useEffect(() => {
         axios.get('http://localhost:4000/book/getAllGenres')
@@ -53,12 +77,14 @@ export const HeroLib = () => {
         heroTitle.classList.remove('fadeInText');
     };
 
-    const handleCheckbox = value => setCategory(value === category ? '' : value);
-
-    console.log(allBooks)
+    const handleCheckbox = value => {
+        setCurrentIndex(0)
+        setCategory(value === category ? '' : value);
+    }
+    // console.log(allBooks)
 
     return (
-        <>
+        <div className='libraryContainer'>
             <div className='hero-image'>
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="curtain">
                     <h1 className='hero-title'>Window To The World</h1>
@@ -75,7 +101,7 @@ export const HeroLib = () => {
                             <div className="categories">
                                 <h2>GENRE</h2>
                                 {stateGenre && allGenres.map(genre => (
-                                    <div key={genre} className="category">
+                                    <div key={genre} className="custom-checkbox category">
                                         <input
                                             type="checkbox"
                                             checked={category === genre}
@@ -87,15 +113,27 @@ export const HeroLib = () => {
                                         <label htmlFor={genre}>{genre}</label>
                                     </div>
                                 ))}
+
                             </div>
                             <div className="bookcase" id='bookcase'>
                                 <h2>{category ? `${category} Books` : 'All Books'}</h2>
+                                <p onClick={() => setState(!state)} className='seeAllBooksFunction'>See All Books</p>
+
                                 {stateBook && allBooks.slice(currentIndex, currentIndex + 6).map(book => (
                                     <Link key={book.name} className="book" to={`${book.slug}`}>
-                                        <img src={book.bookCover} alt="Book Cover" />
-                                        <p>{book.name}</p>
+                                        <motion.div
+                                            ref={ref}
+                                            initial="hidden"
+                                            animate={inView ? "visible" : "hidden"}
+                                            variants={containerVariants}
+                                            className="book-list"
+                                        >
+                                            <img src={book.bookCover} alt="Book Cover" className="book-image" />
+                                            <p>{book.name}</p>
+                                        </motion.div>
                                     </Link>
                                 ))}
+
                             </div>
                         </div>
                         <div className="arrow-library">
@@ -104,12 +142,11 @@ export const HeroLib = () => {
                                 setCurrentIndex={setCurrentIndex}
                                 currentIndex={currentIndex}
                                 length={allBooks ? allBooks.length : 0}
-                                positionPage='library-title'
                             />
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
+            </div >
+        </div>
     );
 }
