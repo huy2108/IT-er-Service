@@ -20,7 +20,7 @@
   	npm run dev  
      
 ## _DATABASE:_  
-    Download 5 JSON files (5 Collections) in my database folder above  
+    Download 5 JSON files (5 Collections) in my 'database' folder above  
     In MongoDB Compass, ensure to create a new database named: ITer_WebService  
     Create 5 new collections with the names: books, users, postforums, commentforums, commentaries  
     For 'books' collection: import the file ITer_WebService.books.json (in the 'database' folder above)  
