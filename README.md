@@ -1,5 +1,5 @@
-#HOW TO RUN THE WEBSITE
-##_FRONT END:_  
+HOW TO RUN THE WEBSITE#   
+##_FRONT END:_##   
     cd front-end  
   	npm install  
   	npm start    
