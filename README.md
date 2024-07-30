@@ -1,8 +1,8 @@
 **HOW TO RUN THE WEBSITE**
 _FRONT END:_
-    cd front-end
-  	npm install
-  	npm start  
+    cd front-end  
+  	npm install  
+  	npm start    
    
 _BACK END:_
     cd back-end
