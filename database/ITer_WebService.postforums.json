@@ -1,0 +1,271 @@
+[{
+  "_id": {
+    "$oid": "6687826373fbbdb29e2b4b81"
+  },
+  "user": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "title": "What language is good for AI and Machine Learning?",
+  "content": "Can someone help me?",
+  "likes": [
+    {
+      "$oid": "6687814073fbbdb29e2b4b28"
+    },
+    {
+      "$oid": "6687808673fbbdb29e2b4ad5"
+    },
+    {
+      "$oid": "66a853d9a9d275ae61c456da"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "668782d473fbbdb29e2b4bac"
+    },
+    {
+      "$oid": "6687830073fbbdb29e2b4c1e"
+    },
+    {
+      "$oid": "66a8545aa9d275ae61c45826"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T05:19:31.429Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-30T02:47:54.919Z"
+  },
+  "slug": "what-language-is-good-for-ai-and-machine-learning",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6688ba452e49331b324e2232"
+  },
+  "user": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "title": "Where to learn programming?",
+  "content": "Can someone tell me somewhere to learn programming?",
+  "likes": [
+    {
+      "$oid": "6687808673fbbdb29e2b4ad5"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "6688bbd32e49331b324e254c"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-06T03:30:13.167Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-06T03:36:51.360Z"
+  },
+  "slug": "where-to-learn-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6688ba972e49331b324e223b"
+  },
+  "user": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "title": "The discrepancies between JavaScript and Java",
+  "content": "I have read a lot about these 2 languages, but i do not know which one is superior to another. Can someone tell me?",
+  "likes": [
+    {
+      "$oid": "6687814073fbbdb29e2b4b28"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "6688bb662e49331b324e2460"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-06T03:31:35.527Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-06T03:35:02.121Z"
+  },
+  "slug": "the-discrepancies-between-javascript-and-java",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6688bb052e49331b324e22bf"
+  },
+  "user": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "title": "What is IOT?",
+  "content": "Can anybody tell me about IOT?",
+  "likes": [
+    {
+      "$oid": "6687814073fbbdb29e2b4b28"
+    },
+    {
+      "$oid": "6687808673fbbdb29e2b4ad5"
+    },
+    {
+      "$oid": "66a1235e13feca14a07f5f9a"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "6688bb262e49331b324e2316"
+    },
+    {
+      "$oid": "6688bb392e49331b324e2364"
+    },
+    {
+      "$oid": "668d8c55d460832006fe36df"
+    },
+    {
+      "$oid": "66a1245713feca14a07f6045"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-06T03:33:25.749Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-24T15:57:11.076Z"
+  },
+  "slug": "what-is-iot",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668d9168d460832006fe379b"
+  },
+  "user": {
+    "$oid": "668d8b25d460832006fe35b6"
+  },
+  "title": "What is Computer Vision",
+  "content": "Can someone tell me about Computer Vision?",
+  "likes": [
+    {
+      "$oid": "668d8b25d460832006fe35b6"
+    },
+    {
+      "$oid": "66922d3e8b7cefe98ac273a7"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "668d91ebd460832006fe37e4"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-09T19:37:12.271Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T07:32:33.899Z"
+  },
+  "slug": "what-is-computer-vision",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66922dbb8b7cefe98ac2742a"
+  },
+  "user": {
+    "$oid": "66922d3e8b7cefe98ac273a7"
+  },
+  "title": "What is AI",
+  "content": "Can someone tell me about AI?",
+  "likes": [
+    {
+      "$oid": "66922d3e8b7cefe98ac273a7"
+    },
+    {
+      "$oid": "6687808673fbbdb29e2b4ad5"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "66922dfc8b7cefe98ac2745f"
+    },
+    {
+      "$oid": "66a11fda8b1c012af133d2ce"
+    },
+    {
+      "$oid": "66a461145826b2bcb2b7be08"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T07:33:15.989Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-27T02:53:08.187Z"
+  },
+  "slug": "what-is-ai",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a1249013feca14a07f606d"
+  },
+  "user": {
+    "$oid": "66a1235e13feca14a07f5f9a"
+  },
+  "title": "What is the most popular language for Web Development?",
+  "content": "Can someone help me?",
+  "likes": [
+    {
+      "$oid": "66a1235e13feca14a07f5f9a"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "66a124e713feca14a07f60a4"
+    }
+  ],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-24T15:58:08.225Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-24T15:59:35.655Z"
+  },
+  "slug": "what-is-the-most-popular-language-for-web-development",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a8556ca9d275ae61c458b2"
+  },
+  "user": {
+    "$oid": "66a853d9a9d275ae61c456da"
+  },
+  "title": "What is IS?",
+  "content": "Can anybody help me?",
+  "likes": [],
+  "comments": [],
+  "status": "accepted",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-30T02:52:28.396Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-30T02:52:35.617Z"
+  },
+  "slug": "what-is-is",
+  "__v": 0
+}]

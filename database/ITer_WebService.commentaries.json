@@ -1,0 +1,299 @@
+[{
+  "_id": {
+    "$oid": "6687813173fbbdb29e2b4b1e"
+  },
+  "commenter": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "book": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "content": "Gooddddddddd",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 5,
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-07-05T05:14:25.048Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-27T02:52:36.501Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668781a573fbbdb29e2b4b4d"
+  },
+  "commenter": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "book": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "content": "dcsdf",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 4,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T05:16:21.448Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T05:16:21.448Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668796c073fbbdb29e2b4d19"
+  },
+  "commenter": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "book": {
+    "$oid": "6683e96b5ab9020316ae1e56"
+  },
+  "content": "Nice!!!!!!!!1",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 5,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T06:46:24.036Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T08:28:50.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687d18273fbbdb29e2b5502"
+  },
+  "commenter": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "book": {
+    "$oid": "6683e6ef5ab9020316ae1e3a"
+  },
+  "content": "Comprehensive guide",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 5,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T10:57:06.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T10:57:06.738Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687d1e373fbbdb29e2b5546"
+  },
+  "commenter": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "book": {
+    "$oid": "668403364cf8e7713063a0a2"
+  },
+  "content": "Niceeeeeeeeeeeeeeeeeee",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 4,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T10:58:43.648Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T10:58:43.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687d21c73fbbdb29e2b5587"
+  },
+  "commenter": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "book": {
+    "$oid": "6683e6ef5ab9020316ae1e3a"
+  },
+  "content": "Good",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 4,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T10:59:40.647Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T10:59:40.647Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687d25073fbbdb29e2b55a3"
+  },
+  "commenter": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "book": {
+    "$oid": "6683e96b5ab9020316ae1e56"
+  },
+  "content": "Good book",
+  "likes": 0,
+  "dislikes": 0,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T11:00:32.085Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T11:03:06.495Z"
+  },
+  "__v": 0,
+  "star": 4
+},
+{
+  "_id": {
+    "$oid": "6687d28773fbbdb29e2b5609"
+  },
+  "commenter": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "book": {
+    "$oid": "6683e74d5ab9020316ae1e3d"
+  },
+  "content": "Nice book",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 5,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T11:01:27.387Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T11:01:27.387Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668d8bd9d460832006fe35f5"
+  },
+  "commenter": {
+    "$oid": "668d8b25d460832006fe35b6"
+  },
+  "book": {
+    "$oid": "6683ece05ab9020316ae1eb5"
+  },
+  "content": "Nice oneeeee",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 3,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-09T19:13:29.938Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-09T19:13:29.938Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66922d678b7cefe98ac273c4"
+  },
+  "commenter": {
+    "$oid": "66922d3e8b7cefe98ac273a7"
+  },
+  "book": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "content": "This is a good bookkkk",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 4,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T07:31:51.416Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T07:32:06.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a123f813feca14a07f5fb2"
+  },
+  "commenter": {
+    "$oid": "66a1235e13feca14a07f5f9a"
+  },
+  "book": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "content": "THis is a good book!!!!",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 4,
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-07-24T15:55:36.867Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-24T15:56:11.732Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a460fb5826b2bcb2b7bda6"
+  },
+  "commenter": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "book": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "content": "Gud",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 5,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-27T02:52:43.357Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-27T02:52:43.357Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a85432a9d275ae61c45743"
+  },
+  "commenter": {
+    "$oid": "66a853d9a9d275ae61c456da"
+  },
+  "book": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "content": "Niceweee!!",
+  "likes": 0,
+  "dislikes": 0,
+  "star": 3,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-30T02:47:14.260Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-30T02:47:20.922Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "6687808673fbbdb29e2b4ad5"
+  },
+  "firstname": "Quang Huy",
+  "lastname": "Le",
+  "username": "lequanghuy",
+  "password": "lequanghuy",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T05:11:34.301Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T05:11:34.301Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687814073fbbdb29e2b4b28"
+  },
+  "firstname": "Quang Minh",
+  "lastname": "Le",
+  "username": "lequangminh",
+  "password": "lequangminh",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-05T05:14:40.556Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T05:14:40.556Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668d8b25d460832006fe35b6"
+  },
+  "firstname": "Minh Huy",
+  "lastname": "Le",
+  "username": "leminhhuy",
+  "password": "leminhhuy",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-09T19:10:29.782Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-09T19:10:29.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66922d3e8b7cefe98ac273a7"
+  },
+  "firstname": "Quang",
+  "lastname": "Le",
+  "username": "lequang",
+  "password": "lequanghuy",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T07:31:10.239Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T07:31:10.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a1235e13feca14a07f5f9a"
+  },
+  "firstname": "Hung",
+  "lastname": "Nguyen",
+  "username": "nguyenhung",
+  "password": "nguyenhung",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-24T15:53:02.511Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-24T15:53:02.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a853d9a9d275ae61c456da"
+  },
+  "firstname": "Minh Khue",
+  "lastname": "Pham",
+  "username": "phamminhkhue",
+  "password": "phamminhkhue",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-30T02:45:45.717Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-30T02:46:19.209Z"
+  },
+  "__v": 0
+}]

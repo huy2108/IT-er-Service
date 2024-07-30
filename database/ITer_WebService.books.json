@@ -1,0 +1,1840 @@
+[{
+  "_id": {
+    "$oid": "6683e4115ab9020316ae1e19"
+  },
+  "name": "Introduction to Computers and Programming using C++ and MATLAB",
+  "description": "This note covers introduction, Data representation, Algorithms and Pseudocodes, Getting started in C++, Loops, Early abstraction functions, More variable types, Data abstraction, More data abstraction, arrays, structures, Miscellaneous topics, A potpourri of applications, Programming in MATLAB, Graphics, Programming Style Guide for C++, Syntax reference for beginning C++, Syntax reference for more advanced C++ and syntax reference for MATLAB.",
+  "author": "Alex F Bielajew, The University of Michigan",
+  "bookCover": "http://localhost:4000/images/bookCover_1719919633727.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719919633728.pdf",
+  "genre": "C++",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T11:27:13.766Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T11:27:13.766Z"
+  },
+  "slug": "introduction-to-computers-and-programming-using-c-and-matlab",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683e6895ab9020316ae1e37"
+  },
+  "name": "Introduction to Python for Computational Science and Engineering",
+  "description": "This note covers the following topics: A powerful calculator, Data types and data structures, introspection, Input and output, Control flow, Function and modules, Functional tools, Common tasks, Python shells, Symbolic computation, Numerical Computation, Numerical python arrays, Visualising data, Numerical method using python, Pandas data science with python, Python packages and environments.",
+  "author": "Hans Fangohr",
+  "bookCover": "http://localhost:4000/images/bookCover_1719920264982.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719920264984.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T11:37:45.014Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T11:37:45.014Z"
+  },
+  "slug": "introduction-to-python-for-computational-science-and-engineering",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683e6ef5ab9020316ae1e3a"
+  },
+  "name": " C++ Reference Manual",
+  "description": "This PDF covers the following topics related to C++ : C++ Standard Template Library, C++ Vectors, C++ Double-ended Queues, C++ Lists, C++ Priority Queues, C++ Queues, C++ Stacks, C++ Sets, C++ Multisets, C++ Maps, C++ Multimaps, C++ Bitsets.",
+  "author": "cppreference.com",
+  "bookCover": "http://localhost:4000/images/bookCover_1719920367239.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719920367239.pdf",
+  "genre": "C++",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T11:39:27.252Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T11:39:27.252Z"
+  },
+  "slug": "c-reference-manual",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683e74d5ab9020316ae1e3d"
+  },
+  "name": " How To Code in Python 3",
+  "description": "Extremely versatile and popular among developers, Python is a good general-purpose language that can be used in a variety of applications. If you use the book in the order it is laid out, you'll begin your exploration in Python by understanding the key differences between Python 3 and the previous versions of the language. The contents include :Python 2 vs Python 3: Practical Considerations",
+  "author": "Lisa Tagliaferri, DigitalOcean, New York City, New York, USA",
+  "bookCover": "http://localhost:4000/images/bookCover_1719920461856.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719920461856.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T11:41:01.879Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T11:41:01.879Z"
+  },
+  "slug": "how-to-code-in-python-3",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683e8b85ab9020316ae1e53"
+  },
+  "name": "Think C++",
+  "description": "This PDF covers the following topics related to C++ : The way of the program, Variables and types, Function, Conditionals and recursion, Fruitful functions, Iteration, Strings and things, Structures, More structures, Vectors, Member functions, Vectors of Objects, Objects of Vectors, Classes and invariants, File Input/Output and apmatrixes.",
+  "author": "Allen B. Downey",
+  "bookCover": "http://localhost:4000/images/bookCover_1719920824935.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719920824936.pdf",
+  "genre": "C++",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T11:47:04.949Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T11:47:04.949Z"
+  },
+  "slug": "think-c",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683e96b5ab9020316ae1e56"
+  },
+  "name": "C++ lecture notes",
+  "description": " C++ lecture notes Francois Fleuret  This lecture note includes: Memory,CPU, Files, Shell and Basic C++, Expressions, Variable scopes, Functions, Arrays and pointers, dynamic allocation, War with the bugs, Cost of algorithm, sorting, Creating new types, Object-Oriented programming, More details about class definitions, More about methods, Inheritance, Virtual methods, Boxes and arrows, Design patterns : sets and iterators, Strings",
+  "author": " Francois Fleuret",
+  "bookCover": "http://localhost:4000/images/bookCover_1719921003230.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719921003231.pdf",
+  "genre": "C++",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T11:50:03.244Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T11:50:03.244Z"
+  },
+  "slug": "c-lecture-notes",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683ece05ab9020316ae1eb5"
+  },
+  "name": "Lecture Slides for Programming in C++",
+  "description": "This document constitutes a detailed set of lecture slides on the C++ programming language and is current with the C++14 standard. Many aspects of the C++ language are covered from introductory to more advanced.",
+  "author": "Michael D. Adams",
+  "bookCover": "http://localhost:4000/images/bookCover_1719921888368.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719921888369.pdf",
+  "genre": "C++",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:04:48.437Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:04:48.437Z"
+  },
+  "slug": "lecture-slides-for-programming-in-c",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683ef495ab9020316ae1eba"
+  },
+  "name": "Introduction to Programming through Python and C",
+  "description": "This note explains the following topics: Types of Digital Computers, Stored Program Computer, Computer Models, Machine Language Program, Program Execution, Central Processing Unit, Memory Write, Binary World, Assembly Language Program, High-Level Languages, Compiler, Operating System, Python Interpreter.",
+  "author": "Goutam Biswas",
+  "bookCover": "http://localhost:4000/images/bookCover_1719922505087.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719922505088.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:15:05.098Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:15:05.098Z"
+  },
+  "slug": "introduction-to-programming-through-python-and-c",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f0175ab9020316ae1ebd"
+  },
+  "name": "Python Programming Course Material",
+  "description": "The contents include: Introductions, Operators in Python, Input and Output Statements, Control flow Statements, Strings, Files, Lists, Sets, Tuples, Dictionaries, Functions, Modules.",
+  "author": "Mr. P. Prathap Naidu",
+  "bookCover": "http://localhost:4000/images/bookCover_1719922711136.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719922711137.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:18:31.161Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:18:31.161Z"
+  },
+  "slug": "python-programming-course-material",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f0d15ab9020316ae1ec0"
+  },
+  "name": "Lecture Notes On Object Oriented Programming Through Python",
+  "description": "This note describes the following topics: Introduction to Python and Object Oriented Concepts, Python Classes and Objects, Strings and Functions, Exception Handling, Graphical User Interface.",
+  "author": "Mr. M Purushotham Reddy and Mrs. A Lakshmi",
+  "bookCover": "http://localhost:4000/images/bookCover_1719922897977.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719922897978.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:21:37.993Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:21:37.993Z"
+  },
+  "slug": "lecture-notes-on-object-oriented-programming-through-python",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f46e5ab9020316ae1ee7"
+  },
+  "name": " Introduction to Python Programming Course Notes",
+  "description": "This note covers the following topics: Basic Principles of Python, String Data, String Operations, Numeric Data, Types of Numeric Data, Conversion of Scalar Types, Lists, Tuples and Dictionaries, Input and Output, Programming, Functions, Using Modules, Writing Modules and Exceptions.",
+  "author": "Phil Spector",
+  "bookCover": "http://localhost:4000/images/bookCover_1719923822615.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719923822616.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:37:02.627Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:37:02.627Z"
+  },
+  "slug": "introduction-to-python-programming-course-notes",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f4e15ab9020316ae1eea"
+  },
+  "name": "Python Programming",
+  "description": "Python is a high-level, structured, open-source programming language that can be used for a wide variety of programming tasks. Topics covered includes: Interactive mode, Creating Python programs, Basic syntax, Data types, Numbers , Strings, Operators , Flow control, Functions, Scoping, Exceptions, Modules, Classes, Metaclasses, Reflection, Regular Expression, GUI Programming, Game",
+  "author": "wikimedia.org",
+  "bookCover": "http://localhost:4000/images/bookCover_1719923937853.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719923937854.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:38:57.865Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:38:57.865Z"
+  },
+  "slug": "python-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f5355ab9020316ae1eed"
+  },
+  "name": "Python Language Reference",
+  "description": "This reference manual describes the syntax and core semantics of the Python language. Topics covered includes: Lexical analysis, Data model, Execution model , Expressions, Simple statements, Compound statements, Top-level components and Full Grammar specification.",
+  "author": "Guido van Rossum and Fred L. Drake",
+  "bookCover": "http://localhost:4000/images/bookCover_1719924021453.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719924021454.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:40:21.465Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:40:21.465Z"
+  },
+  "slug": "python-language-reference",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f5eb5ab9020316ae1eff"
+  },
+  "name": "Basics of python programming",
+  "description": "This lecture note covering basic to advanced concepts of python ,program execution, arithmetic, variables and functions. It also explores turtle module case studies, conditionals, recursion, functions, iteration, strings, and lists with a focus on algorithms, dictionaries, tuples, file handling, and basic object-oriented programming, classes, functions, inheritance, and advanced Python features.",
+  "author": "S Venkata Lakshmi",
+  "bookCover": "http://localhost:4000/images/bookCover_1719924203166.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719924203167.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:43:23.184Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:43:23.184Z"
+  },
+  "slug": "basics-of-python-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683f6a35ab9020316ae1f02"
+  },
+  "name": "Python for Everybody",
+  "description": "This PDF Python for Everybody by Dr. Charles R. Severance covers the following topics related to Python : Why should you learn to write programs?, Variables, expressions, and statements, Conditional execution, Functions, Iteration, Strings, Files, Lists, Dictionaries, Tuples, Regular expressions, Networked programs, Using Web Services, Object-oriented programming, Using Databases and SQL",
+  "author": "Dr. Charles R. Severance",
+  "bookCover": "http://localhost:4000/images/bookCover_1719924387431.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719924387432.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T12:46:27.447Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T12:46:27.447Z"
+  },
+  "slug": "python-for-everybody",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fbd75ab9020316ae1f09"
+  },
+  "name": "Lecture Notes On C Programming and Data Structure",
+  "description": "The C programming language is a structure-oriented programming language, developed at Bell Laboratories in 1972 by Dennis Ritchie. The contents in this lecture note include : A Beginner's Guide Introduction to Programming, Introduction to C, structure of C programming, Elements of C, Variables, Statements, Expressions, Input-Output in C, Formatted Input-Output, Operators, Control",
+  "author": "Prof. Dr. Amiya Kumar Rath, Asst. Prof Sumitra Kisan, Asst. Prof Gargi Bhattacharjee",
+  "bookCover": "http://localhost:4000/images/bookCover_1719925719704.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719925719704.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:08:39.718Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:08:39.718Z"
+  },
+  "slug": "lecture-notes-on-c-programming-and-data-structure",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fce05ab9020316ae1f7b"
+  },
+  "name": " Computer Programming Lecture Notes by Ila Chandana Kumari",
+  "description": "The C Programming Language is also called the Mother of languages. The C language was developed by Dennis Ritchie between 1969 and 1973 and is a second and third generation of languages. The C language provides both low- and high-level features it provides both the power of low-level languages and the flexibility and simplicity of high-level languages. ",
+  "author": "Ms. P. Ila Chandana Kumari, Associate Professor, IIT, Institute of Aeronautical Engineering,Dundigal",
+  "bookCover": "http://localhost:4000/images/bookCover_1719925984201.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719925984201.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:13:04.215Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:13:04.215Z"
+  },
+  "slug": "computer-programming-lecture-notes-by-ila-chandana-kumari",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fd2d5ab9020316ae1f7e"
+  },
+  "name": "Computer Programming In C Language",
+  "description": "This note covers the following topics: Structures of C Programming, Built-in Operators and function, Loop Control structures, Simple Arithmetic Problems, Addition Multiplication of integers, Functions, Pointers.",
+  "author": "Eiilm University",
+  "bookCover": "http://localhost:4000/images/bookCover_1719926061455.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719926061455.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:14:21.482Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:14:21.482Z"
+  },
+  "slug": "computer-programming-in-c-language",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fd945ab9020316ae1f92"
+  },
+  "name": "Lecture Note On Programming In C",
+  "description": "This note explains the following topics: C Language Fundamentals such as Character set, Identifiers, keyword, data types, Constants and variables, statements, expression, operators, precedence of operators, Input-output, control structures, decision making and branching, Arrays, Functions and Strings, Pointers, Structures, Unions, File handling.",
+  "author": "Asst. Professor Mrs Etuari Oram and Asst. Prof. Mr Bighnaraj Naik",
+  "bookCover": "http://localhost:4000/images/bookCover_1719926164287.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719926164288.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:16:04.299Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:16:04.299Z"
+  },
+  "slug": "lecture-note-on-programming-in-c",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fde15ab9020316ae1f95"
+  },
+  "name": " C Language Tutorial",
+  "description": "This note covers the following topics: getting started, getting started in c, program control, assignment logical compares, functions and variables, defines and macros, strings and arrays, pointers, standard inputoutput, file inputoutput, structures and unions, dynamic allocation, character and bit manipulation, example programs, the visual calculator version and error messages",
+  "author": "Gordon Dodrill",
+  "bookCover": "http://localhost:4000/images/bookCover_1719926241167.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719926241167.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:17:21.176Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:17:21.176Z"
+  },
+  "slug": "c-language-tutorial",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fe4a5ab9020316ae1f98"
+  },
+  "name": "An Introduction to the C Programming Language and Software Design",
+  "description": "This note covers the following topics: types operators and expressions , branching and iteration , functions , scope and extent , software design , pointers , arrays and strings , dynamic memory , the c preprocessor , structures and unions , bitwise operations , input and output , generic programming , data structures , c in the real world , Collected Style Rules and Common Errors.",
+  "author": "Tim Bailey",
+  "bookCover": "http://localhost:4000/images/bookCover_1719926346759.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719926346759.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:19:06.770Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:19:06.770Z"
+  },
+  "slug": "an-introduction-to-the-c-programming-language-and-software-design",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683fec95ab9020316ae1fd4"
+  },
+  "name": " Programming in C",
+  "description": "This lecture note covers data types,input or output operations, arithmetic operations, decision-making statements, loop structures, functions, storage classes, arrays, pointers, string manipulation, dynamic memory management, and the use of structures and unions for creating custom data types.",
+  "author": "Dr.Prikshat Kumar Angra",
+  "bookCover": "http://localhost:4000/images/bookCover_1719926473688.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719926473688.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:21:13.726Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:21:13.726Z"
+  },
+  "slug": "programming-in-c",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683ff355ab9020316ae1fd7"
+  },
+  "name": "C Programming",
+  "description": "C is a programming language developed at AT and Ts Bell Laboratories of USA in 1972. It was designed and written by Dennis Ritche. Dennis Ritchie is known as the founder of C language. It was developed to overcome the problems of previous languages such as B, BCPL etc. The contents include: Computer systems, Computer Languages, Creating and Running Programs, Algorithm, What is C, Tokens, Data Types, Variables, Type Conversions, Statements, Arrays, Strings, Functions, Structures, Unions, Enumerations and Typedef, File.",
+  "author": "Department of Information Technology, Vardhaman College of Engineering",
+  "bookCover": "http://localhost:4000/images/bookCover_1719926581590.svg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719926581591.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:23:01.610Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:23:01.610Z"
+  },
+  "slug": "c-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668403364cf8e7713063a0a2"
+  },
+  "name": "C++ Programming by Wikibooks.org",
+  "description": "This book covers the C++ programming language, its interactions with software design and real life use of the language. It is presented in a series of chapters as an introductory prior to advance courses but can also be used as a reference book.",
+  "author": "Wikibooks.org",
+  "bookCover": "http://localhost:4000/images/bookCover_1719927606202.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719927606203.pdf",
+  "genre": "C++",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:40:06.244Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:40:06.244Z"
+  },
+  "slug": "c-programming-by-wikibooks-org",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668406742f6ffa10cc285159"
+  },
+  "name": "GO Programming Language",
+  "description": "This book explores history, design principles and application in design patterns. It evaluates Go's suitability for learning, discusses design patterns in Go using the GoHotDraw framework, and systematically assesses Go's features. The book concludes with insights into related work, future prospects, and a concise summary, featuring a comprehensive design pattern catalog for developers and researchers exploring Go's programming paradigms.",
+  "author": "Frank Schmager",
+  "bookCover": "http://localhost:4000/images/bookCover_1719928436953.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719928436955.pdf",
+  "genre": "Golang",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:53:56.981Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:53:56.981Z"
+  },
+  "slug": "go-programming-language",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668407642f6ffa10cc28517f"
+  },
+  "name": "How To Code in Go",
+  "description": "Go (or GoLang) is a modern programming language originally developed by Google that uses high-level syntax similar to scripting languages. It is popular for its minimal syntax and innovative handling of concurrency, as well as for the tools it provides for building native binaries on foreign platforms. This PDF covers the following topics related to Go : Introduction, How To Install Go and Set Up a Local Programming Environment on Ubuntu 18.04, How To Install Go and Set Up a Local Programming Environment on macOS, How To Install Go and Set Up a Local Programming Environment on Windows 10, How To Write Your First Program in Go, Understanding the GOPATH, How To Write Comments in Go, Understanding Data Types in Go, An Introduction to Working with Strings in Go, How To Format Strings in Go, An Introduction to the Strings Package in Go,  How To Use Variables and Constants in Go, How To Convert Data Types in Go, How To Do Math in Go with Operators,  Understanding Boolean Logic in Go.",
+  "author": "Mark Bates, Cory LaNou, Tim Raymond",
+  "bookCover": "http://localhost:4000/images/bookCover_1719928676264.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719928676270.pdf",
+  "genre": "Golang",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T13:57:56.294Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T13:57:56.294Z"
+  },
+  "slug": "how-to-code-in-go",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668409742f6ffa10cc2851c1"
+  },
+  "name": "The Little Go Book by Karl Seguin",
+  "description": "Go is a compiled, statically typed language with a C�like syntax and garbage collection. This PDF covers the following topics related to Go : Introduction, Getting Started, The Basics, Structures, Maps, Arrays and Slices, Code Organization and Interfaces, Tidbits, Concurrency.",
+  "author": "Karl Seguin",
+  "bookCover": "http://localhost:4000/images/bookCover_1719929204537.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719929204538.pdf",
+  "genre": "Golang",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T14:06:44.550Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T14:06:44.550Z"
+  },
+  "slug": "the-little-go-book-by-karl-seguin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66841c5c1e633cd8cab5452b"
+  },
+  "name": "Kotlin Language Documentation",
+  "description": "Kotlin is a modern but already mature programming language aimed to make developers happier. It's concise, safe, interoperable with Java and other languages, and provides many ways to reuse code between multiple platforms for productive programming. This PDF covers the following topics related to Kotlin : Kotlin Docs, Get started with Kotlin, Kotlin Multiplatform, Kotlin for server side, Kotlin for Android, Kotlin for JavaScript, Kotlin for data science, Kotlin for competitive programming, etc.",
+  "author": "kotlinlang.org",
+  "bookCover": "http://localhost:4000/images/bookCover_1719934044827.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719934044828.pdf",
+  "genre": "Kotlin",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:27:24.973Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:27:24.973Z"
+  },
+  "slug": "kotlin-language-documentation",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66841c9e1e633cd8cab5452e"
+  },
+  "name": " Learning Kotlin",
+  "description": "This PDF covers the following topics related to Kotlin : Getting started with Kotlin, Annotations, Arrays, Basic Lambdas, Basics of Kotlin, Class Inheritance, Collections, Conditional Statements, Configuring Kotlin build, Coroutines, Delegated properties, DSL Building, Enum, Extension Methods, Functions, Idioms, Interfaces, Java, Kotlin Android Extensions, Kotlin Caveats, Null Safety, Ranges, Reflection, Regex, Strings, Type aliases, Type-Safe Builders, Vararg Parameters in Functions, Visibility Modifiers.",
+  "author": "riptutorial.com",
+  "bookCover": "http://localhost:4000/images/bookCover_1719934110719.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719934110720.pdf",
+  "genre": "Kotlin",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:28:30.736Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:28:30.736Z"
+  },
+  "slug": "learning-kotlin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66841f481e633cd8cab54567"
+  },
+  "name": " IBM PC Assembly Language Lecture Notes",
+  "description": "This lecture note covers essential topics such as system architecture, assembly processes, DOS file operations, debugging, and Intel 8088 CPU registers, the course emphasizes hands-on learning with practical assignments. The content explores addressing modes, ASCII representation, system calls, segments, logical instructions, and graphics programming. These notes serve as a valuable resource for students seeking proficiency in low-level programming and hardware interfacing on the IBM PC.",
+  "author": "NA",
+  "bookCover": "http://localhost:4000/images/bookCover_1719934792688.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719934792688.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:39:52.705Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:39:52.705Z"
+  },
+  "slug": "ibm-pc-assembly-language-lecture-notes",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66841f931e633cd8cab5456f"
+  },
+  "name": "Lecture notes on PC Assembly Language",
+  "description": "This pdf includes Number Systems, Assembly Language, Computer Organization, Creating a Program, Skeleton File, Working with Integers, Control Structures, Translating Standard Control Structures, Shift Operations, Boolean Bitwise Operations, Manipulating bits in C, Big and Little Endian Representations, Counting Bits, Indirect Addressing, Simple Subprogram Example, The Stack, The CALL and RET Instructions, Calling Conventions, Interfacing Assembly with C, Recursive Subprograms, Introduction, Floating Point Representation, Floating Point Arithmetic, The Numeric Coprocessor and Structures.",
+  "author": "Paul A.Carter",
+  "bookCover": "http://localhost:4000/images/bookCover_1719934867320.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719934867321.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:41:07.334Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:41:07.334Z"
+  },
+  "slug": "lecture-notes-on-pc-assembly-language",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66841ff51e633cd8cab54578"
+  },
+  "name": "The Art of Assembly Language by Unicamp",
+  "description": "This PDF book covers the following topics related to Assembly Language : Data Representation, Boolean Algebra, System Organization, Memory Layout and Access, Variables and Data Structures, The 80x86 Instruction Set, The UCR Standard Library, MASM: Directives & Pseudo-Opcodes, Arithmetic and Logical Operations, Control Structures, Procedures and Functions, Procedures: Advanced Topics, MS-DOS, PC-BIOS, and File I/O, Floating Point Arithmetic, Strings and Character Sets, Pattern Matching, Interrupts, Traps, and Exceptions, Resident Programs, Processes, Coroutines, and Concurrency, The PC Keyboard, The PC Parallel Ports, The PC Serial Ports, The PC Video Display, The PC Game Adapter, Optimizing Your Program.",
+  "author": "Institute of Computing, State University of Campinas",
+  "bookCover": "http://localhost:4000/images/bookCover_1719934965081.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719934965081.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:42:45.115Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:42:45.115Z"
+  },
+  "slug": "the-art-of-assembly-language-by-unicamp",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684203a1e633cd8cab5457b"
+  },
+  "name": "MIPS Assembly Language Programming",
+  "description": "This PDF book covers the following topics related to MIPS Assembly Language Programming : The MIPS Architecture, Pseudocode, Number Systems, PCSpim The MIPS Simulator, Algorithm Development, Reentrant Functions, Exception Processing, A Pipelined Implementation, Embedded Processors.",
+  "author": "Computer Science Department, California State University, Chico, California",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935034184.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935034185.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:43:54.199Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:43:54.199Z"
+  },
+  "slug": "mips-assembly-language-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684209a1e633cd8cab5457e"
+  },
+  "name": "Assembly Language Programming",
+  "description": "This PDF covers the following topics related to Assembly Language Programming : Fundamentals of assembly language, Introduction to assembly language and ARMlite, Countdown, Matchsticks, Hangman, Indirect & Indexed addressing, The System Stack, and Subroutines, Interrupts, Snake.",
+  "author": "Richard Pawson, Peter Higginson",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935130392.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935130392.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:45:30.407Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:45:30.407Z"
+  },
+  "slug": "assembly-language-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668421181e633cd8cab54581"
+  },
+  "name": "Lecture Notes in Assembly Language",
+  "description": "The contents include: Before we begin, First program, NASM syntax, Basic CPU instructions, Debugging with GDB, First program linked with a C library, FPU, File operations, MMX, SSE, RDTS, Inline assembler, Introduction,Registers, Memory.",
+  "author": "Piotr Fulma",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935256887.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935256888.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:47:36.904Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:47:36.904Z"
+  },
+  "slug": "lecture-notes-in-assembly-language",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684216c1e633cd8cab545aa"
+  },
+  "name": "Assembly Language Princeton University",
+  "description": "The contents include: High Level Languages, Machine Languages, Assembly Languages, Why Learn Assembly Language, Why Learn ARM Assembly Lang, Von Neumann Architecture, Registers and RAM, ALU, Instruction Format, Signed vs Unsigned, 32-bit Arithmetic, 8- and 16-bit Arithmetic, Loads and Stores, Defining Data, Byte Order.",
+  "author": "Princeton University",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935340448.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935340448.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:49:00.463Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:49:00.463Z"
+  },
+  "slug": "assembly-language-princeton-university",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668421f01e633cd8cab545ae"
+  },
+  "name": " x86 64 Assembly Language Programming with Ubuntu",
+  "description": "The purpose of this text is to provide a reference for University level assembly language and systems programming. Specifically, this text addresses the x86-641 instruction set for the popular x86-64 class of processors using the Ubuntu 64-bit Operating System. While the provided code and various examples should work under any Linux-based 64-bit OS, they have only been tested under Ubuntu 14.04 LTS.",
+  "author": "Ed Jorgensen",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935472783.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935472783.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:51:12.814Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:51:12.814Z"
+  },
+  "slug": "x86-64-assembly-language-programming-with-ubuntu",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668422321e633cd8cab545b1"
+  },
+  "name": "Lecture Note On Microprocessor And Assembly Language Programmimg",
+  "description": "This lecture note explains the following topics: Microprocessor Architecture, Address Space Partitioning, Memory Classification, Memory Structure, I/o Ports &",
+  "author": "Mrs. Sasmita Acharya",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935538888.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935538889.pdf",
+  "genre": "Assembly",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:52:18.918Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:52:18.918Z"
+  },
+  "slug": "lecture-note-on-microprocessor-and-assembly-language-programmimg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668423671e633cd8cab545b4"
+  },
+  "name": " Introduction to R programming",
+  "description": "This PDF covers Introduction and preliminaries, Simple manipulations : numbers and vectors, Objects, Ordered and unordered factors, Arrays and matrices, Lists and data frame, Reading data from files, Probability distribution, Grouping, Statistical models in R, Graphical procedures, Packages, OS Facilities, Invoking R, The command-line editor, function and variable index.",
+  "author": "W.N.Venables and D.M.Smith",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935847024.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935847024.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:57:27.037Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:57:27.037Z"
+  },
+  "slug": "introduction-to-r-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668423cd1e633cd8cab545ec"
+  },
+  "name": " R Programming by Sathyabama Institute of Science and Technolog",
+  "description": "This book covers the history and fundamentals of R, guiding readers through installation and usage of R, R Studio, and R Shiny. Explore data manipulation, interfaces, and visualization, while mastering statistical modeling and machine learning. Real-world case studies offer practical insights into hypothesis generation, data exploration, and model building. This guide is your essential companion for mastering statistical computing and data science using R.",
+  "author": "Sathyabama Institute of Science and Technolog",
+  "bookCover": "http://localhost:4000/images/bookCover_1719935949361.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719935949361.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T15:59:09.395Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T15:59:09.395Z"
+  },
+  "slug": "r-programming-by-sathyabama-institute-of-science-and-technolog",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684241f1e633cd8cab545f0"
+  },
+  "name": "R Programming",
+  "description": "This PDF covers the following topics related to R Programming : Introduction, Basic Arithmetic and Objects , Data, Functions, Graphics, The apply Family of Functions, Arrays and Tables, Strings, Classes and Methods, Debugging, Arithmetic Subtleties, List of the Most Useful Functions in R.",
+  "author": "Robin Evans",
+  "bookCover": "http://localhost:4000/images/bookCover_1719936031687.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719936031687.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:00:31.700Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:00:31.700Z"
+  },
+  "slug": "r-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684254e1e633cd8cab545f8"
+  },
+  "name": "A Crash Course in Ada",
+  "description": "This note explains the following topics: C-Syntax Pitfalls and Comparison to Ada, C-Syntax versus Ada Syntax, loop in Ada, Programming by Contract, Pitfalls and Issues when Programming in Ada, Identifier Casing and Loop Boundaries, The Order of Expression Evaluation in Ada, Distinguished Properties of Ada, Types and Subtypes, Constrained Arrays, Private Types, Polymorphism, Callbacks.",
+  "author": "Rainer Koschke",
+  "bookCover": "http://localhost:4000/images/bookCover_1719936334273.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719936334273.pdf",
+  "genre": "Ada",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:05:34.285Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:05:34.285Z"
+  },
+  "slug": "a-crash-course-in-ada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668425921e633cd8cab545fb"
+  },
+  "name": "Rainer Koschke",
+  "description": "This PDF covers the following topics related to Ada Programming : Introduction, Imperative language, Subprograms, Modular programming, Strongly typed language, Arrays, Access types (pointers), More about records, Fixed-point types, Privacy, Generics, Exceptions, Tasking, Design by contracts, Interfacing with C, Object-oriented programming, Standard library.",
+  "author": "Raphael Amiard, Gustavo A. Hoffmann",
+  "bookCover": "http://localhost:4000/images/bookCover_1719936402041.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719936402042.pdf",
+  "genre": "Ada",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:06:42.058Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:06:42.058Z"
+  },
+  "slug": "rainer-koschke",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668425c81e633cd8cab545fe"
+  },
+  "name": "An Introduction to Ada Programming for Experienced Computer Programmers",
+  "description": "This note explains the following topics: Summary of Language, Types and the type model, Control structures for algorithms, Access types, Subprograms, Package design, Child library units, Object oriented programming with packages, Using standard libraries and annexes, Exception management, Generic components, New names from old ones, Concurrency with tasking.",
+  "author": "Richard Riehle",
+  "bookCover": "http://localhost:4000/images/bookCover_1719936456175.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719936456175.pdf",
+  "genre": "Ada",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:07:36.189Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:07:36.189Z"
+  },
+  "slug": "an-introduction-to-ada-programming-for-experienced-computer-programmers",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684285b1e633cd8cab54616"
+  },
+  "name": " Introduction to Perl and BioPerl",
+  "description": "This note explains the following topics: Perl program structure, Variable types, Scalars , Pragmas , Operators , Arrays , Hashes , Control structures, Loop modifers, Subroutines , Reading and Writing a file, Filehandles , Regular expressions, Regex anchors and operators, Running perl, POD tools, What is Bioperl, Gotchas , Objects in Perl, Interfaces and Inheritance in Bioperl, Bioperl components, Parse a sequence from file, output, Read in sequence and write out in different format, Sequence Databases.",
+  "author": "Heikki Lehväslaiho",
+  "bookCover": "http://localhost:4000/images/bookCover_1719937115888.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719937115888.pdf",
+  "genre": "Pearl",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:18:35.903Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:18:35.903Z"
+  },
+  "slug": "introduction-to-perl-and-bioperl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668428b91e633cd8cab5462e"
+  },
+  "name": "Extreme Programming in Perl",
+  "description": "This book invites Perl programmers and their customers to take a fresh look at software development. It explains Extreme Perl to both programmers and business people.",
+  "author": "Robert Nagler",
+  "bookCover": "http://localhost:4000/images/bookCover_1719937209711.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719937209711.pdf",
+  "genre": "Pearl",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:20:09.726Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:20:09.726Z"
+  },
+  "slug": "extreme-programming-in-perl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668428f41e633cd8cab54631"
+  },
+  "name": "Learning to program with Perl",
+  "description": "This PDF covers the following topics related to Perl : Getting Started with Perl, Arrays, Hashes and Loops, File Handling, Regular Expressions, Subroutines, References and Complex Data Structures, Perl Modules, Interacting with external programs.",
+  "author": "Babraham BioInformatics",
+  "bookCover": "http://localhost:4000/images/bookCover_1719937268064.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719937268064.pdf",
+  "genre": "Pearl",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T16:21:08.077Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T16:21:08.077Z"
+  },
+  "slug": "learning-to-program-with-perl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668438341e633cd8cab5467a"
+  },
+  "name": "3D Programming in Java",
+  "description": "The book has 18 chapters, plus three appendices and a bibliography. Each chapter is fairly self−contained or explicitly references related chapters, allowing you to focus quickly on relevant material for your problem at hand. I have ordered the material so that, if you were starting a project from scratch, progressing in the book would mirror the design questions you would face as you worked through your design study and development efforts. More commonly used material is, in general, closer to the beginning of the book.",
+  "author": "Daniel Selman",
+  "bookCover": "http://localhost:4000/images/bookCover_1719941172554.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719941172554.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:26:12.581Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:26:12.581Z"
+  },
+  "slug": "3d-programming-in-java",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668438d01e633cd8cab5467d"
+  },
+  "name": "A Practical Introduction to Data Structures and Algorithm Analysis Third Edition (Java Version)",
+  "description": "",
+  "author": "Clifford A. Shaffer",
+  "bookCover": "http://localhost:4000/images/bookCover_1719941328704.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719941328704.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:28:48.721Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:28:48.721Z"
+  },
+  "slug": "a-practical-introduction-to-data-structures-and-algorithm-analysis-third-edition-java-version",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668439671e633cd8cab54690"
+  },
+  "name": "An Introduction to the USA Computing Olympiad, Java Edition",
+  "description": "",
+  "author": "Darren Yao",
+  "bookCover": "http://localhost:4000/images/bookCover_1719941479815.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719941479815.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:31:19.833Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:31:19.833Z"
+  },
+  "slug": "an-introduction-to-the-usa-computing-olympiad-java-edition",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668439bf1e633cd8cab54693"
+  },
+  "name": "Apache Jakarta Commons: Reusable Java Components",
+  "description": "",
+  "author": "Will Iverson",
+  "bookCover": "http://localhost:4000/images/bookCover_1719941567656.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719941567656.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:32:47.702Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:32:47.702Z"
+  },
+  "slug": "apache-jakarta-commons-reusable-java-components",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843a251e633cd8cab54696"
+  },
+  "name": "Core Servlets and JavaServer Pages, 2nd Ed. (2003)",
+  "description": "",
+  "author": "Duane A. Bailey",
+  "bookCover": "http://localhost:4000/images/bookCover_1719941669961.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719941669961.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:34:29.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:34:29.979Z"
+  },
+  "slug": "core-servlets-and-javaserver-pages-2nd-ed-2003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843b581e633cd8cab546b6"
+  },
+  "name": "Java Application Development on Linux (2005)",
+  "description": "",
+  "author": "Carl Albing, Michael Schwarz",
+  "bookCover": "http://localhost:4000/images/bookCover_1719941976298.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719941976298.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:39:36.322Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:39:36.322Z"
+  },
+  "slug": "java-application-development-on-linux-2005",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843bc11e633cd8cab546b9"
+  },
+  "name": "Learning Java Language",
+  "description": "",
+  "author": "Compiled from StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942081480.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942081480.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:41:21.515Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:41:21.515Z"
+  },
+  "slug": "learning-java-language",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843c061e633cd8cab546bc"
+  },
+  "name": "Microservices Best Practices for Java",
+  "description": "",
+  "author": "Michael Hofmann, Erin Schnabel, Katherine Stanley",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942150568.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942150568.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:42:30.586Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:42:30.586Z"
+  },
+  "slug": "microservices-best-practices-for-java",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843caf1e633cd8cab546bf"
+  },
+  "name": "Open Data Structures (in Java)",
+  "description": "",
+  "author": "Pat Morin",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942319218.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942319218.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:45:19.239Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:45:19.239Z"
+  },
+  "slug": "open-data-structures-in-java",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843cec1e633cd8cab546c2"
+  },
+  "name": "The Java EE6 Tutorial",
+  "description": "",
+  "author": "NA",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942379976.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942379976.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:46:20.029Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:46:20.029Z"
+  },
+  "slug": "the-java-ee6-tutorial",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843d391e633cd8cab546c5"
+  },
+  "name": "The Java EE7 Tutorial",
+  "description": "",
+  "author": "Eric Jendrock, et al.",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942456968.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942456968.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:47:37.027Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:47:37.027Z"
+  },
+  "slug": "the-java-ee7-tutorial",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843d8c1e633cd8cab546c8"
+  },
+  "name": "Writing Advanced Applications for the Java 2 Platform",
+  "description": "",
+  "author": "Calvin Austin, Monica Pawlan",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942540496.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942540496.pdf",
+  "genre": "Java",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:49:00.550Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:49:00.550Z"
+  },
+  "slug": "writing-advanced-applications-for-the-java-2-platform",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66843e361e633cd8cab546de"
+  },
+  "name": "JavaScript Bible",
+  "description": "",
+  "author": "Danny Goodman",
+  "bookCover": "http://localhost:4000/images/bookCover_1719942710352.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1719942710352.pdf",
+  "genre": "JavaScript",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:51:50.399Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:51:50.399Z"
+  },
+  "slug": "javascript-bible",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684401f1e633cd8cab546e1"
+  },
+  "name": "Node.js Succinctly, Syncfusion",
+  "description": "",
+  "author": "Emanuele DelBono",
+  "bookCover": "http://localhost:4000/images/bookCover_1719943199761.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719943199761.pdf",
+  "genre": "NodeJs",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T17:59:59.821Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T17:59:59.821Z"
+  },
+  "slug": "node-js-succinctly-syncfusion",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684408b1e633cd8cab546f9"
+  },
+  "name": "30 days of React: An introduction to React in 30 bite-size morsels",
+  "description": "",
+  "author": "Ari Lerner",
+  "bookCover": "http://localhost:4000/images/bookCover_1719943307450.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719943307452.pdf",
+  "genre": "React",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T18:01:47.524Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T18:01:47.524Z"
+  },
+  "slug": "30-days-of-react-an-introduction-to-react-in-30-bite-size-morsels",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684423e1e633cd8cab5470d"
+  },
+  "name": "Learning Vue.js",
+  "description": "",
+  "author": "Compiled from StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1719943742905.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719943742906.pdf",
+  "genre": "VueJs",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T18:09:02.925Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T18:09:02.925Z"
+  },
+  "slug": "learning-vue-js",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668442ad1e633cd8cab54710"
+  },
+  "name": "Jenkins Starter Guide Ebook",
+  "description": "",
+  "author": "NA",
+  "bookCover": "http://localhost:4000/images/bookCover_1719943853727.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719943853728.pdf",
+  "genre": "Jenkins",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T18:10:53.747Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T18:10:53.747Z"
+  },
+  "slug": "jenkins-starter-guide-ebook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684431d1e633cd8cab54713"
+  },
+  "name": "Jenkins: The Definitive Guide",
+  "description": "",
+  "author": "John Ferguson Smart",
+  "bookCover": "http://localhost:4000/images/bookCover_1719943965385.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719943965385.pdf",
+  "genre": "Jenkins",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T18:12:45.484Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T18:12:45.484Z"
+  },
+  "slug": "jenkins-the-definitive-guide",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668443801e633cd8cab54716"
+  },
+  "name": "Learning Jenkins",
+  "description": "",
+  "author": "Compiled from StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1719944064112.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719944064112.pdf",
+  "genre": "Jenkins",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T18:14:24.129Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T18:14:24.129Z"
+  },
+  "slug": "learning-jenkins",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668449097b6239a439b53f5f"
+  },
+  "name": "Learing Kotlin Stack Overflow",
+  "description": "",
+  "author": "Compiled from StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1719945480960.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1719945480964.pdf",
+  "genre": "Kotlin",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-02T18:38:01.029Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T18:38:01.029Z"
+  },
+  "slug": "learing-kotlin-stack-overflow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691765d8b7cefe98ac270fa"
+  },
+  "name": "Entity Framework Notes for Professionals",
+  "description": "",
+  "author": "StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1720809053659.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720809053667.pdf",
+  "genre": ".NET",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:30:53.770Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:30:53.770Z"
+  },
+  "slug": "entity-framework-notes-for-professionals",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669177e38b7cefe98ac2712d"
+  },
+  "name": ".NET Framework Notes for Professionals",
+  "description": "",
+  "author": "StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1720809443830.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720809443834.pdf",
+  "genre": ".NET",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:37:23.870Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:37:23.870Z"
+  },
+  "slug": "net-framework-notes-for-professionals",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669178948b7cefe98ac27130"
+  },
+  "name": ".NET Performance Testing and Optimization - The Complete Guide",
+  "description": "",
+  "author": "Paul Glavich, Chris Farrell",
+  "bookCover": "http://localhost:4000/images/bookCover_1720809619939.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720809619944.pdf",
+  "genre": ".NET",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:40:20.147Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:40:20.147Z"
+  },
+  "slug": "net-performance-testing-and-optimization-the-complete-guide",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669178fa8b7cefe98ac27133"
+  },
+  "name": "Under the Hood of .NET Memory Management",
+  "description": "",
+  "author": "Chris Farrell, Nick Harrison ",
+  "bookCover": "http://localhost:4000/images/bookCover_1720809722048.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720809722068.pdf",
+  "genre": ".NET",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:42:02.280Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:42:02.280Z"
+  },
+  "slug": "under-the-hood-of-net-memory-management",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66917ae38b7cefe98ac27151"
+  },
+  "name": "PHP 5 Power Programming ",
+  "description": "",
+  "author": "Andi Gutmans, Stig Sæther Bakken, and Derick Rethans",
+  "bookCover": "http://localhost:4000/images/bookCover_1720810211598.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1720810211611.pdf",
+  "genre": "PHP",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:50:11.775Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:50:11.775Z"
+  },
+  "slug": "php-5-power-programming",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66917bdf8b7cefe98ac2716f"
+  },
+  "name": "PHP Handbook",
+  "description": "",
+  "author": "Flavio Copes",
+  "bookCover": "http://localhost:4000/images/bookCover_1720810462887.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720810462888.pdf",
+  "genre": "PHP",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:54:23.047Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:54:23.047Z"
+  },
+  "slug": "php-handbook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66917c508b7cefe98ac27187"
+  },
+  "name": "C Handbook",
+  "description": "",
+  "author": "Flavio Copes",
+  "bookCover": "http://localhost:4000/images/bookCover_1720810576284.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720810576298.pdf",
+  "genre": "C",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:56:16.334Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:56:16.334Z"
+  },
+  "slug": "c-handbook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66917d008b7cefe98ac2719f"
+  },
+  "name": "JS Handbook",
+  "description": "",
+  "author": "Flavio Copes",
+  "bookCover": "http://localhost:4000/images/bookCover_1720810752229.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720810752230.pdf",
+  "genre": "JavaScript",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T18:59:12.271Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T18:59:12.271Z"
+  },
+  "slug": "js-handbook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669180408b7cefe98ac271a2"
+  },
+  "name": "NodeJS Handbook",
+  "description": "",
+  "author": "Flavio Copes",
+  "bookCover": "http://localhost:4000/images/bookCover_1720811584329.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720811584329.pdf",
+  "genre": "NodeJs",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T19:13:04.362Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T19:13:04.362Z"
+  },
+  "slug": "nodejs-handbook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669181498b7cefe98ac271ec"
+  },
+  "name": "PHP Notes for Professionals",
+  "description": "",
+  "author": "StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1720811848969.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720811848971.pdf",
+  "genre": "PHP",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-12T19:17:29.022Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-12T19:17:29.022Z"
+  },
+  "slug": "php-notes-for-professionals",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691ed278b7cefe98ac272df"
+  },
+  "name": "Python Handbook",
+  "description": "",
+  "author": "Flavio Copes",
+  "bookCover": "http://localhost:4000/images/bookCover_1720839463319.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720839463319.pdf",
+  "genre": "Python",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T02:57:43.408Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T02:57:43.408Z"
+  },
+  "slug": "python-handbook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691eeeb8b7cefe98ac272e2"
+  },
+  "name": "React Handbook",
+  "description": "",
+  "author": "Flavio Copes",
+  "bookCover": "http://localhost:4000/images/bookCover_1720839915222.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720839915225.pdf",
+  "genre": "React",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T03:05:15.249Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T03:05:15.249Z"
+  },
+  "slug": "react-handbook",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691ef848b7cefe98ac272e5"
+  },
+  "name": "PHP Reference: Beginner to Intermediate PHP5",
+  "description": "",
+  "author": "Mario Lurig",
+  "bookCover": "http://localhost:4000/images/bookCover_1720840068295.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1720840068296.pdf",
+  "genre": "PHP",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T03:07:48.313Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T03:07:48.313Z"
+  },
+  "slug": "php-reference-beginner-to-intermediate-php5",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691f06b8b7cefe98ac27312"
+  },
+  "name": "PHPUnit Manual",
+  "description": "",
+  "author": "Sebastian Bergmann",
+  "bookCover": "http://localhost:4000/images/bookCover_1720840299241.jpg",
+  "bookContent": "http://localhost:4000/images/bookContent_1720840299241.pdf",
+  "genre": "PHP",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T03:11:39.260Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T03:11:39.260Z"
+  },
+  "slug": "phpunit-manual",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669200418b7cefe98ac27364"
+  },
+  "name": "Essential Perl",
+  "description": "",
+  "author": "NA",
+  "bookCover": "http://localhost:4000/images/bookCover_1720844353227.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720844353228.pdf",
+  "genre": "Pearl",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:19:13.250Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:19:13.250Z"
+  },
+  "slug": "essential-perl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669201188b7cefe98ac27367"
+  },
+  "name": "An Introduction to Statistical Learning with Applications in R",
+  "description": "",
+  "author": "Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani",
+  "bookCover": "http://localhost:4000/images/bookCover_1720844568734.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720844568736.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:22:48.930Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:22:48.930Z"
+  },
+  "slug": "an-introduction-to-statistical-learning-with-applications-in-r",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669201e58b7cefe98ac2736a"
+  },
+  "name": "Practical Regression and Anova using R",
+  "description": "",
+  "author": "Julian J. Faraway",
+  "bookCover": "http://localhost:4000/images/bookCover_1720844773893.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720844773894.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:26:13.928Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:26:13.928Z"
+  },
+  "slug": "practical-regression-and-anova-using-r",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669203138b7cefe98ac2736d"
+  },
+  "name": "R for Spatial Analysis ",
+  "description": "",
+  "author": "Charles DiMaggio",
+  "bookCover": "http://localhost:4000/images/bookCover_1720845074815.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720845074815.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:31:15.029Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:31:15.029Z"
+  },
+  "slug": "r-for-spatial-analysis",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669203ff8b7cefe98ac27370"
+  },
+  "name": "R Notes for Professionals",
+  "description": "",
+  "author": "StackOverflow Documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1720845311492.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720845311492.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:35:11.574Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:35:11.574Z"
+  },
+  "slug": "r-notes-for-professionals",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6692045d8b7cefe98ac27373"
+  },
+  "name": "R Practicals",
+  "description": "",
+  "author": "Charles DiMaggio",
+  "bookCover": "http://localhost:4000/images/bookCover_1720845405692.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720845405692.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:36:45.725Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:36:45.725Z"
+  },
+  "slug": "r-practicals",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6692054f8b7cefe98ac27376"
+  },
+  "name": "The R Inferno",
+  "description": "",
+  "author": "Patrick Burns",
+  "bookCover": "http://localhost:4000/images/bookCover_1720845647803.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720845647804.pdf",
+  "genre": "R",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:40:47.836Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:40:47.836Z"
+  },
+  "slug": "the-r-inferno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6692095d8b7cefe98ac27379"
+  },
+  "name": "A Beginner’s Guide to Matlab",
+  "description": "",
+  "author": "Christos Xenophontos",
+  "bookCover": "http://localhost:4000/images/bookCover_1720846685733.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720846685734.pdf",
+  "genre": "Matlab",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T04:58:05.765Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T04:58:05.765Z"
+  },
+  "slug": "a-beginner-s-guide-to-matlab",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66920a4e8b7cefe98ac27387"
+  },
+  "name": "An Interactive Introduction to MATLAB",
+  "description": "",
+  "author": "NA",
+  "bookCover": "http://localhost:4000/images/bookCover_1720846926861.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720846926862.pdf",
+  "genre": "Matlab",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T05:02:06.931Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T05:02:06.931Z"
+  },
+  "slug": "an-interactive-introduction-to-matlab",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66920adb8b7cefe98ac2738a"
+  },
+  "name": "Introduction to MATLAB for Engineering Students ",
+  "description": "",
+  "author": "David Houcque",
+  "bookCover": "http://localhost:4000/images/bookCover_1720847067700.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720847067702.pdf",
+  "genre": "Matlab",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T05:04:27.736Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T05:04:27.736Z"
+  },
+  "slug": "introduction-to-matlab-for-engineering-students",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66920b9e8b7cefe98ac2738d"
+  },
+  "name": "MATLAB Notes for professionals",
+  "description": "",
+  "author": "StackOverflow documentation",
+  "bookCover": "http://localhost:4000/images/bookCover_1720847262334.png",
+  "bookContent": "http://localhost:4000/images/bookContent_1720847262337.pdf",
+  "genre": "Matlab",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-13T05:07:42.390Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-13T05:07:42.390Z"
+  },
+  "slug": "matlab-notes-for-professionals",
+  "__v": 0
+}]
