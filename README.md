@@ -1,10 +1,10 @@
-HOW TO RUN THE WEBSITE#   
-##_FRONT END:_##   
+# HOW TO RUN THE WEBSITE   
+## _FRONT END:_     
     cd front-end  
   	npm install  
   	npm start    
    
-##_BACK END:_  
+## _BACK END:_  
     cd back-end  
   	npm install  
   	touch .env  
@@ -14,12 +14,12 @@ HOW TO RUN THE WEBSITE#
   		Ctrl + X --> Y --> Enter  
     npm start  
       
-##_ADMIN:_  
+## _ADMIN:_  
     cd admin  
   	npm install  
   	npm run dev  
      
-##_DATABASE:_  
+## _DATABASE:_  
     Download 5 JSON files (5 Collections) in my database folder above  
     In MongoDB Compass, ensure to create a new database named: ITer_WebService  
     Create 5 new collections with the names: books, users, postforums, commentforums, commentaries  
